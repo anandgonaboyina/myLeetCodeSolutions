@@ -1,19 +1,21 @@
-
+//my brute force solution
 class Solution {
 public:
-    int findMaxConsecutiveOnes(vector<int>& nums) {
+    int findMaxConsecutiveOnes(vector<int>& nums) 
+    {
         int maxOnes =0;
-        int n =nums.size(), k=0;
-        while(k <n)
-        {
-            int cnt=0;
-            while(k<n && nums[k] ==1)
+        int n =nums.size(), cnt=0;
+        for(int i=0; i<n; i++)
             {
-                k++; cnt++;
+                if(nums[i]==1)
+                {
+                    cnt++;
+                    maxOnes = max(maxOnes, cnt);
+                }
+                else
+                    cnt=0;
             }
-            k++;
-            maxOnes = max(maxOnes, cnt);
-        }
         return maxOnes;
     }
 };
+
