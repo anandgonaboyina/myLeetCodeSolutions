@@ -17,7 +17,12 @@ public:
 };
 */
 /////////////////////////////////////////////////////////////////////
-// Better Approach for unsorted array
+//////////////if array is sorted we can use two pointer approach
+// as we know if new element is bigger or smaller
+// we can get extra space as 1 with tc N
+
+// Better Approach for unsorted array tc is N
+/*
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) 
@@ -33,38 +38,67 @@ public:
         return {-1,-1};
     }
 };
+*/
 
 
+//here in this problem we need to return orginial indexes so dont use if you want check below 
+//method we used vector<pair<int,int>>; to store original indexes
 
-
-
-
-
-
-
-
-
-////////////////////////////////////////////////////////////////////
-/* previously did
+//Optimal Approach by sorting the array first and applying the two pointer approach
+/*
 class Solution {
 public:
-    vector<int> twoSum(vector<int>& nums, int target)
-    {
-        vector<int> vt;
-        for(int i=0; i<nums.size(); i++)
-        {
-            for(int j=i+1; j<nums.size(); j++)
+    vector<int> twoSum(vector<int>& nums, int target) {
+        sort(nums.begin(), nums.end());
+        int n=nums.size();
+        int left=0, right=n-1;
+            while(left<right)
+            {
+                int sum = nums[left] + nums[right];
+                if(sum>target)
                 {
-                    if(nums[i] + nums[j] == target)
-                        {
-                            vt.push_back(i);
-                            vt.push_back(j);
-                             return vt;
-                        }
+                    right--;
                 }
+                else if(sum<target)
+                {
+                    left++;
+                }
+                else
+                return {left, right};
+            }
+            return {-1, -1};
+    }
+};
+*/
+
+
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        int n = nums.size();
+        
+        vector<pair<int, int>> indexedNums(n);   
+         // vector pairs {element_value, original_index}
+        for (int i = 0; i < n; i++) {
+            indexedNums[i] = {nums[i], i};
         }
-        return vt;
+        
+        // pairs sort by first element by default
+        sort(indexedNums.begin(), indexedNums.end());
+        
+        int left = 0, right = n - 1;
+        while (left < right) {
+            int sum = indexedNums[left].first + indexedNums[right].first;  
+            if (sum > target) {
+                right--;
+            } else if (sum < target) {
+                left++;
+            } else {
+                return {indexedNums[left].second, indexedNums[right].second};
+            }
+        }
+        
+        return {-1, -1};
     }
 };
 
-*/
