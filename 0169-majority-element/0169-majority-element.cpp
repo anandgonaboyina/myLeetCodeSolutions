@@ -17,6 +17,7 @@ public:
 };
 */
 //for SC 1
+//Logic the true majority element appears more than half the time, it is mathematically guaranteed to be the last candidate standing when the loop finishes
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
@@ -33,3 +34,14 @@ public:
         return candidate;
     }
 };
+
+// if the majority element is not garuntee then do a check at last in place of return  above
+/*
+int verifyCnts=0;
+for(int x : nums)
+{
+    if(x==candidate)
+        verifyCnts++;
+}
+return verifyCnts>n/2? candidate : -1;
+*/
