@@ -1,3 +1,5 @@
+// my brute force solution
+/*
 class Solution {
 public:
     int majorityElement(vector<int>& nums) 
@@ -11,5 +13,23 @@ public:
                 return x;
         }
         return -1;
+    }
+};
+*/
+//for SC 1
+class Solution {
+public:
+    int majorityElement(vector<int>& nums) {
+        int cnt=0, candidate;
+        for(int x : nums)
+        {
+            if(cnt==0)
+                candidate=x;
+            if(candidate==x)
+                cnt++;
+            else
+                cnt--;
+        }
+        return candidate;
     }
 };
