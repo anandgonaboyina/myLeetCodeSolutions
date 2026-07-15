@@ -14,6 +14,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0014-longest-common-prefix](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0014-longest-common-prefix) |
 | [0015-3sum](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0015-3sum) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0026-remove-duplicates-from-sorted-array) |
+| [0031-next-permutation](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0031-next-permutation) |
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0136-single-number](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0136-single-number) |
@@ -28,6 +29,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0015-3sum](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0015-3sum) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0026-remove-duplicates-from-sorted-array) |
+| [0031-next-permutation](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0031-next-permutation) |
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
 | [0189-rotate-array](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0189-rotate-array) |
 | [0283-move-zeroes](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0283-move-zeroes) |
