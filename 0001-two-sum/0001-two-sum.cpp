@@ -83,7 +83,7 @@ public:
             indexedNums[i] = {nums[i], i};
         }
         
-        // pairs sort by first element by default
+        // pairs sort by first element by default s
         sort(indexedNums.begin(), indexedNums.end());
         
         int left = 0, right = n - 1;
