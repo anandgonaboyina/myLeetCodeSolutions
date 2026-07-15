@@ -18,3 +18,4 @@
 | [Reverse an array](Reverse-an-array) | [.cpp](Reverse-an-array/solution.cpp) |
 | [Check if String is Palindrome or Not](Check-if-String-is-Palindrome-or-Not) | [.cpp](Check-if-String-is-Palindrome-or-Not/solution.cpp) |
 | [Fibonacci Number](Fibonacci-Number) | [.cpp](Fibonacci-Number/solution.cpp) |
+| [Counting Frequencies of Array Elements](Counting-Frequencies-of-Array-Elements) | [.cpp](Counting-Frequencies-of-Array-Elements/solution.cpp) |
