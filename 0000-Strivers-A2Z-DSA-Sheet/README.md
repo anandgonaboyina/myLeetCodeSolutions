@@ -10,3 +10,4 @@
 | [Divisors of a Number](Divisors-of-a-Number) | [.cpp](Divisors-of-a-Number/solution.cpp) |
 | [Check for Prime Number](Check-for-Prime-Number) | [.cpp](Check-for-Prime-Number/solution.cpp) |
 | [introduction-to-recursion-understand-recursion-by-printing-something-n-times](introduction-to-recursion-understand-recursion-by-printing-something-n-times) | [.cpp](introduction-to-recursion-understand-recursion-by-printing-something-n-times/solution.cpp) |
+| [print-name-n-times-using-recursion](print-name-n-times-using-recursion) | [.cpp](print-name-n-times-using-recursion/solution.cpp) |
