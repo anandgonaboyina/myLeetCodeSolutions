@@ -28,3 +28,4 @@
 | [Recursive Insertion Sort](Recursive-Insertion-Sort) | [.cpp](Recursive-Insertion-Sort/solution.cpp) |
 | [Quick Sorting](Quick-Sorting) | [.cpp](Quick-Sorting/solution.cpp) |
 | [Kadane's Algorithm](Kadane-s-Algorithm) | [.cpp](Kadane-s-Algorithm/solution.cpp) |
+| [Largest Element](Largest-Element) | [.cpp](Largest-Element/solution.cpp) |
