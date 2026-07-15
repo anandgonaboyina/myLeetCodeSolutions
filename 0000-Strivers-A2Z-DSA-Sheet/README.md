@@ -31,3 +31,4 @@
 | [Largest Element](Largest-Element) | [.cpp](Largest-Element/solution.cpp) |
 | [Second Largest Element](Second-Largest-Element) | [.cpp](Second-Largest-Element/solution.cpp) |
 | [Check if the Array is Sorted II](Check-if-the-Array-is-Sorted-II) | [.cpp](Check-if-the-Array-is-Sorted-II/solution.cpp) |
+| [Left Rotate Array by K Places](Left-Rotate-Array-by-K-Places) | [.cpp](Left-Rotate-Array-by-K-Places/solution.cpp) |
