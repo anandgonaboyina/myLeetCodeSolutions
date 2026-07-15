@@ -73,3 +73,4 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | Problem | Solution |
 | :--- | :--- |
 | [Union of two sorted arrays](https://takeuforward.org) | [.cpp](0000-Strivers-A2Z-DSA-Sheet/Union-of-two-sorted-arrays/solution.cpp) |
+| [Left Rotate Array by K Places](https://takeuforward.org) | [.cpp](0000-Strivers-A2Z-DSA-Sheet/Left-Rotate-Array-by-K-Places/solution.cpp) |
