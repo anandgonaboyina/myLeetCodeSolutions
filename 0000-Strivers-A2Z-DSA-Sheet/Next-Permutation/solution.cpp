@@ -35,5 +35,5 @@ Step 2:
 Step 3:
  Minimize the TailRight now, the numbers after your swapped index ([5, 4, 1, 0]) are still in descending order, making that section as large as possible.To make this the immediate next permutation, you want that tail section to be as small as possible (ascending order).Because that tail is guaranteed to be sorted in reverse, you can convert it to ascending order by simply reversing everything to the right of your original break point.
  Reversing [5, 4, 1, 0] turns it into [0, 1, 4, 5].
- Final Result: [2, 3, 0, 1, 4, 5]
+ Final Result: [2, 3, 0, 1, 4, 5] 
 */
