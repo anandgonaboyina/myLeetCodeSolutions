@@ -12,3 +12,4 @@
 | [introduction-to-recursion-understand-recursion-by-printing-something-n-times](introduction-to-recursion-understand-recursion-by-printing-something-n-times) | [.cpp](introduction-to-recursion-understand-recursion-by-printing-something-n-times/solution.cpp) |
 | [print-name-n-times-using-recursion](print-name-n-times-using-recursion) | [.cpp](print-name-n-times-using-recursion/solution.cpp) |
 | [Print 1 to N using Recursion](Print-1-to-N-using-Recursion) | [.cpp](Print-1-to-N-using-Recursion/solution.cpp) |
+| [Print N to 1 using Recursion](Print-N-to-1-using-Recursion) | [.cpp](Print-N-to-1-using-Recursion/solution.cpp) |
