@@ -68,9 +68,3 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0014-longest-common-prefix](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0014-longest-common-prefix) |
 <!---LeetCode Topics End-->
 
-# Strivers A2Z DSA Sheet Solutions
-
-| Problem | Solution |
-| :--- | :--- |
-| [Union of two sorted arrays](https://takeuforward.org) | [.cpp](0000-Strivers-A2Z-DSA-Sheet/Union-of-two-sorted-arrays/solution.cpp) |
-| [Left Rotate Array by K Places](https://takeuforward.org) | [.cpp](0000-Strivers-A2Z-DSA-Sheet/Left-Rotate-Array-by-K-Places/solution.cpp) |
