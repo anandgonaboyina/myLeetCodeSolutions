@@ -1,4 +1,4 @@
-//Brute force solution
+//my Brute force solution
 /*
 class Solution {
 public:
