@@ -42,22 +42,36 @@ public:
 /////////////////////////////////////////////////////////////
 //FOR Returning the subArray that has maximum sum
 
+#include <vector>
+#include <algorithm>
+#include <climits>
+#include <utility>
+
 class Solution {
 public:
-    vector<int> maxSubArray(vector<int>& nums) 
+    std::vector<int> maxSubArray(std::vector<int>& nums) 
     {
-        int sum=0, maxSum=INT_MIN;
-        vector<int> vt;
-        for(int x : nums)
+        int sum = 0, maxSum = INT_MIN;
+        int startIn = 0;
+        std::pair<int, int> subArrInd = {0, 0}; 
+        
+        for(int i = 0; i < nums.size();  i++)
         {
-            sum +=x;
-            maxSum = max(maxSum, sum);
-            if(sum<0)
+            sum += nums[i];
+            maxSum = std::max(maxSum, sum);
+            if(sum == maxSum) 
             {
-                sum=0;
+                subArrInd = {startIn, i};
             }
-            vt.push_back(x);
+            if(sum < 0)
+            {
+                sum = 0;
+                startIn = i + 1;
+            }
         }
+        
+        return std::vector<int>(nums.begin() + subArrInd.first, nums.begin() + subArrInd.second + 1);
     }
 };
-//anandkumar
+
+//
