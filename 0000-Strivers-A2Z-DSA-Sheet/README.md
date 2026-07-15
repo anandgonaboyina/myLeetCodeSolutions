@@ -39,3 +39,4 @@
 | [Maximum Consecutive Ones](Maximum-Consecutive-Ones) | [.cpp](Maximum-Consecutive-Ones/solution.cpp) |
 | [Single Number - I](Single-Number-I) | [.cpp](Single-Number-I/solution.cpp) |
 | [Longest subarray with sum K](Longest-subarray-with-sum-K) | [.cpp](Longest-subarray-with-sum-K/solution.cpp) |
+| [Two Sum](Two-Sum) | [.cpp](Two-Sum/solution.cpp) |
