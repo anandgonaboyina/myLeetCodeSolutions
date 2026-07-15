@@ -22,3 +22,4 @@
 | [Highest Occurring Element in an Array](Highest-Occurring-Element-in-an-Array) | [.cpp](Highest-Occurring-Element-in-an-Array/solution.cpp) |
 | [Selection Sort](Selection-Sort) | [.cpp](Selection-Sort/solution.cpp) |
 | [Bubble Sort](Bubble-Sort) | [.cpp](Bubble-Sort/solution.cpp) |
+| [Insertion Sorting](Insertion-Sorting) | [.cpp](Insertion-Sorting/solution.cpp) |
