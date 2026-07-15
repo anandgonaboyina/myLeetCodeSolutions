@@ -1,5 +1,5 @@
 //brute force solution
-
+/*
 class Solution {
 public:
     vector<int> rearrangeArray(vector<int>& nums) 
@@ -27,10 +27,10 @@ public:
         return nums;
     }
 };
-
+*/
 
 // Optimal Approach to make it in single pass
-/*
+
 class Solution {
 public:
     vector<int> rearrangeArray(vector<int>& nums) 
@@ -54,5 +54,3 @@ public:
         return ans;
     }
 };
-
-*/
