@@ -6,3 +6,4 @@
 
 - [Count all Digits of a Number](./Count%20all%20Digits%20of%20a%20Number)
 - [Reverse a number](./Reverse%20a%20number)
+- [Union of two sorted arrays](./Union%20of%20two%20sorted%20arrays)
