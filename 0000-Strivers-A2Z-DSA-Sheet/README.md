@@ -33,3 +33,4 @@
 | [Check if the Array is Sorted II](Check-if-the-Array-is-Sorted-II) | [.cpp](Check-if-the-Array-is-Sorted-II/solution.cpp) |
 | [Left Rotate Array by K Places](Left-Rotate-Array-by-K-Places) | [.cpp](Left-Rotate-Array-by-K-Places/solution.cpp) |
 | [Move Zeros to End](Move-Zeros-to-End) | [.cpp](Move-Zeros-to-End/solution.cpp) |
+| [Linear Search](Linear-Search) | [.cpp](Linear-Search/solution.cpp) |
