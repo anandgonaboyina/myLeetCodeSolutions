@@ -15,3 +15,4 @@
 | [Print N to 1 using Recursion](Print-N-to-1-using-Recursion) | [.cpp](Print-N-to-1-using-Recursion/solution.cpp) |
 | [Sum of First N Numbers](Sum-of-First-N-Numbers) | [.cpp](Sum-of-First-N-Numbers/solution.cpp) |
 | [Factorial of a given number](Factorial-of-a-given-number) | [.cpp](Factorial-of-a-given-number/solution.cpp) |
+| [Reverse an array](Reverse-an-array) | [.cpp](Reverse-an-array/solution.cpp) |
