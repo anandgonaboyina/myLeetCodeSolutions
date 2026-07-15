@@ -36,3 +36,4 @@
 | [Linear Search](Linear-Search) | [.cpp](Linear-Search/solution.cpp) |
 | [Union of two sorted arrays](Union-of-two-sorted-arrays) | [.cpp](Union-of-two-sorted-arrays/solution.cpp) |
 | [Find missing number](Find-missing-number) | [.cpp](Find-missing-number/solution.cpp) |
+| [Maximum Consecutive Ones](Maximum-Consecutive-Ones) | [.cpp](Maximum-Consecutive-Ones/solution.cpp) |
