@@ -23,3 +23,4 @@
 | [Selection Sort](Selection-Sort) | [.cpp](Selection-Sort/solution.cpp) |
 | [Bubble Sort](Bubble-Sort) | [.cpp](Bubble-Sort/solution.cpp) |
 | [Insertion Sorting](Insertion-Sorting) | [.cpp](Insertion-Sorting/solution.cpp) |
+| [Merge Sorting](Merge-Sorting) | [.cpp](Merge-Sorting/solution.cpp) |
