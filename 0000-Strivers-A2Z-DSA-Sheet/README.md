@@ -7,3 +7,4 @@
 | [Palindrome Number](Palindrome-Number) | [.cpp](Palindrome-Number/solution.cpp) |
 | [GCD of Two Numbers](GCD-of-Two-Numbers) | [.cpp](GCD-of-Two-Numbers/solution.cpp) |
 | [Check if the Number is Armstrong](Check-if-the-Number-is-Armstrong) | [.cpp](Check-if-the-Number-is-Armstrong/solution.cpp) |
+| [Divisors of a Number](Divisors-of-a-Number) | [.cpp](Divisors-of-a-Number/solution.cpp) |
