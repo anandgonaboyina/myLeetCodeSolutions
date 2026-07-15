@@ -9,3 +9,4 @@
 | [Check if the Number is Armstrong](Check-if-the-Number-is-Armstrong) | [.cpp](Check-if-the-Number-is-Armstrong/solution.cpp) |
 | [Divisors of a Number](Divisors-of-a-Number) | [.cpp](Divisors-of-a-Number/solution.cpp) |
 | [Check for Prime Number](Check-for-Prime-Number) | [.cpp](Check-for-Prime-Number/solution.cpp) |
+| [introduction-to-recursion-understand-recursion-by-printing-something-n-times](introduction-to-recursion-understand-recursion-by-printing-something-n-times) | [.cpp](introduction-to-recursion-understand-recursion-by-printing-something-n-times/solution.cpp) |
