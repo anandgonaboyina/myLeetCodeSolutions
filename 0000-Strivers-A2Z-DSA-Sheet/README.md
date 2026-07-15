@@ -4,3 +4,4 @@
 | :--- | :--- |
 | [Count all Digits of a Number](Count-all-Digits-of-a-Number) | [.cpp](Count-all-Digits-of-a-Number/solution.cpp) |
 | [Reverse a number](Reverse-a-number) | [.cpp](Reverse-a-number/solution.cpp) |
+| [Palindrome Number](Palindrome-Number) | [.cpp](Palindrome-Number/solution.cpp) |
