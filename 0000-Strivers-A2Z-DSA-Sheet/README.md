@@ -30,3 +30,4 @@
 | [Kadane's Algorithm](Kadane-s-Algorithm) | [.cpp](Kadane-s-Algorithm/solution.cpp) |
 | [Largest Element](Largest-Element) | [.cpp](Largest-Element/solution.cpp) |
 | [Second Largest Element](Second-Largest-Element) | [.cpp](Second-Largest-Element/solution.cpp) |
+| [Check if the Array is Sorted II](Check-if-the-Array-is-Sorted-II) | [.cpp](Check-if-the-Array-is-Sorted-II/solution.cpp) |
