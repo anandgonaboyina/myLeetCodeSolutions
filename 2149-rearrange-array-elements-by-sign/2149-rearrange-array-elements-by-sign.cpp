@@ -1,4 +1,36 @@
 //brute force solution
+
+class Solution {
+public:
+    vector<int> rearrangeArray(vector<int>& nums) 
+    {
+        vector<int> Pnums, Nnums;
+        int n = nums.size();
+        for(int i=0; i<n; i++)
+        {
+            if(nums[i]>0)
+            {
+                Pnums.push_back(nums[i]);
+            }
+            else
+            {
+                 Nnums.push_back(nums[i]);
+            }
+        }
+        int p=0,q=0;
+        for(int i=0; i<n; i++)
+        {
+                nums[i]=Pnums[p++];
+                i++;
+                nums[i]=Nnums[q++];
+        }
+        return nums;
+    }
+};
+
+
+// Optimal Approach to make it in single pass
+/*
 class Solution {
 public:
     vector<int> rearrangeArray(vector<int>& nums) 
@@ -23,35 +55,4 @@ public:
     }
 };
 
-
-// better approach to make sc as 1
-// class Solution {
-// public:
-//     vector<int> rearrangeArray(vector<int>& nums) 
-//     {
-//         int first=0, second=1;
-//         int n=nums.size();
-//         int i=1;
-//                     while(nums[0] <0 && i <n)
-//                 {
-//                     if(nums[i]>0)
-//                     swap(nums[0], nums[i]);
-//                     i++;
-//                 }
-//             i=0;
-//         for(i; i<n; i++)
-//         {
-//             if(nums[i]>0)
-//                 {
-//                     swap(nums[first], nums[i]);
-//                     first +=2;
-//                 }
-//             else
-//                 {
-//                     swap(nums[second], nums[i]);
-//                     second +=2;
-//                 }
-//         }
-//         return nums;
-//     }
-// };
+*/
