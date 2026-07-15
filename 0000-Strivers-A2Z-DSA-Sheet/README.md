@@ -20,3 +20,4 @@
 | [Fibonacci Number](Fibonacci-Number) | [.cpp](Fibonacci-Number/solution.cpp) |
 | [Counting Frequencies of Array Elements](Counting-Frequencies-of-Array-Elements) | [.cpp](Counting-Frequencies-of-Array-Elements/solution.cpp) |
 | [Highest Occurring Element in an Array](Highest-Occurring-Element-in-an-Array) | [.cpp](Highest-Occurring-Element-in-an-Array/solution.cpp) |
+| [Selection Sort](Selection-Sort) | [.cpp](Selection-Sort/solution.cpp) |
