@@ -26,3 +26,4 @@
 | [Merge Sorting](Merge-Sorting) | [.cpp](Merge-Sorting/solution.cpp) |
 | [Recursive Bubble Sort](Recursive-Bubble-Sort) | [.cpp](Recursive-Bubble-Sort/solution.cpp) |
 | [Recursive Insertion Sort](Recursive-Insertion-Sort) | [.cpp](Recursive-Insertion-Sort/solution.cpp) |
+| [Quick Sorting](Quick-Sorting) | [.cpp](Quick-Sorting/solution.cpp) |
