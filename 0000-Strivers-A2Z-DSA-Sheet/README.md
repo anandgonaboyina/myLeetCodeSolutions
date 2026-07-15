@@ -42,3 +42,4 @@
 | [Two Sum](Two-Sum) | [.cpp](Two-Sum/solution.cpp) |
 | [Sort an array of 0's 1's and 2's](Sort-an-array-of-0-s-1-s-and-2-s) | [.cpp](Sort-an-array-of-0-s-1-s-and-2-s/solution.cpp) |
 | [Majority Element-I](Majority-Element-I) | [.cpp](Majority-Element-I/solution.cpp) |
+| [Best time to buy and sell stock](Best-time-to-buy-and-sell-stock) | [.cpp](Best-time-to-buy-and-sell-stock/solution.cpp) |
