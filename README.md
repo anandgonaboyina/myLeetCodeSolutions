@@ -22,6 +22,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0268-missing-number) |
 | [0283-move-zeroes](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0283-move-zeroes) |
 | [0485-max-consecutive-ones](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0485-max-consecutive-ones) |
+| [2149-rearrange-array-elements-by-sign](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/2149-rearrange-array-elements-by-sign) |
 ## Two Pointers
 |  |
 | ------- |
@@ -30,6 +31,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
 | [0189-rotate-array](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0189-rotate-array) |
 | [0283-move-zeroes](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0283-move-zeroes) |
+| [2149-rearrange-array-elements-by-sign](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/2149-rearrange-array-elements-by-sign) |
 ## Sorting
 |  |
 | ------- |
@@ -87,5 +89,9 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0121-best-time-to-buy-and-sell-stock) |
+## Simulation
+|  |
+| ------- |
+| [2149-rearrange-array-elements-by-sign](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/2149-rearrange-array-elements-by-sign) |
 <!---LeetCode Topics End-->
 
