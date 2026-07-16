@@ -46,3 +46,4 @@
 | [Rearrange array elements by sign](Rearrange-array-elements-by-sign) | [.cpp](Rearrange-array-elements-by-sign/solution.cpp) |
 | [Next Permutation](Next-Permutation) | [.cpp](Next-Permutation/solution.cpp) |
 | [Leaders in an Array](Leaders-in-an-Array) | [.cpp](Leaders-in-an-Array/solution.cpp) |
+| [Longest Consecutive Sequence in an Array](Longest-Consecutive-Sequence-in-an-Array) | [.cpp](Longest-Consecutive-Sequence-in-an-Array/solution.cpp) |
