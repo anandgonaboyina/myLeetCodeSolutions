@@ -11,7 +11,9 @@ public:
         {
             mp[nums[i]]=0;
         }
-        // for(int x : nums)
+        // for(int x : nums)   //gives time limit exceed if array contains many no of
+        //duplicates as we go on iterate each number if i use this so i go to unique those are 
+        //keys here for maps
         for(auto x : mp)
         {
             if(mp.find(x.first-1) == mp.end())
@@ -19,9 +21,9 @@ public:
                     int k =x.first+1;
                     while(mp.find(k) != mp.end())
                         {
-                        maxL = max(k-x.first+1, maxL);
                         k++;                            
                         }
+                        maxL = max(k-x.first, maxL);
                 }
         }
         return maxL;
