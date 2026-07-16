@@ -5,7 +5,7 @@ public:
     vector<int> leaders(vector<int>& nums) {
     int n=nums.size();
       if(n<2) return nums;
-      vector<int> ans; int n=nums.size();
+      vector<int> ans;
       for(int i=0; i<n; i++)
       {
         bool isLeader = true;
