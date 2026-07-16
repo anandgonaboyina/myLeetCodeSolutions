@@ -47,3 +47,4 @@
 | [Next Permutation](Next-Permutation) | [.cpp](Next-Permutation/solution.cpp) |
 | [Leaders in an Array](Leaders-in-an-Array) | [.cpp](Leaders-in-an-Array/solution.cpp) |
 | [Longest Consecutive Sequence in an Array](Longest-Consecutive-Sequence-in-an-Array) | [.cpp](Longest-Consecutive-Sequence-in-an-Array/solution.cpp) |
+| [Set Matrix Zeroes](Set-Matrix-Zeroes) | [.cpp](Set-Matrix-Zeroes/solution.cpp) |
