@@ -34,6 +34,7 @@ public:
 //as no need to make the row again to zero vector as it takes time i used set to make it take unique i values not duplicate and for columns too 
 
 //my better solution
+/*
 class Solution {
 public:
     void setZeroes(vector<vector<int>>& matrix) 
@@ -62,6 +63,53 @@ public:
                 for(int i=0; i<m; i++)
                     matrix[i][col]=0;
             }
+        
+    }
+};
+*/
+// as above problem takes space complexity O(M+N)
+
+//optimal solution to make space complixity as 1
+class Solution {
+public:
+    void setZeroes(vector<vector<int>>& matrix) 
+    {
+        int m = matrix.size();
+        int n = matrix[0].size();
+        int col0=0, row0=0;
+        for(int i=0; i<m; i++)
+        {
+            for(int j=0; j<n; j++)
+            {
+                if(matrix[i][j]==0)
+                    {
+                            matrix[0][j]=0;
+                            matrix[i][0]=0;
+                            if(j==0)
+                                col0 = 1;
+                            if(i==0)
+                                row0 = 1;
+                    }
+            }
+        }
+        for(int i=1; i<m; i++)
+        {
+            for(int j=1; j<n; j++)
+            {
+                if(matrix[i][0]==0 || matrix[0][j]==0)
+                    {
+                        matrix[i][j]=0;
+                    }
+            }
+        }
+        if(row0==1)
+        {
+            for(int i=0; i<n; i++)
+            matrix[0][i]= 0;
+        }
+        if(col0==1)
+            for(int i=0; i<m; i++)
+                matrix[i][0]=0;
         
     }
 };
