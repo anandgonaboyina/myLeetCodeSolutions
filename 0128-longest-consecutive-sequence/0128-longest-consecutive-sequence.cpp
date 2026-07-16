@@ -1,4 +1,5 @@
 //my brute force
+/*
 class Solution {
 public:
     int longestConsecutive(vector<int>& nums)
@@ -24,6 +25,33 @@ public:
                         k++;                            
                         }
                         maxL = max(k-x.first, maxL);
+                }
+        }
+        return maxL;
+    }
+};
+*/
+// my better approach
+class Solution {
+public:
+    int longestConsecutive(vector<int>& nums)
+    {
+        int n = nums.size();
+        if(n<2) return n;
+        unordered_set<int> st(nums.begin(), nums.end());
+        int maxL=0;
+        for(auto x : st)
+        {
+            if(!st.count(x-1))
+                {
+                    int length=1;
+                    int nextN=x+1;
+                    while(st.count(nextN))
+                    {
+                        length++;
+                        nextN++;
+                    }
+                        maxL = max(length, maxL);
                 }
         }
         return maxL;
