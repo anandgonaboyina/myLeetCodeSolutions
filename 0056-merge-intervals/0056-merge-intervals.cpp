@@ -5,19 +5,18 @@ public:
         int n= intervals.size();
         sort(intervals.begin(), intervals.end());
         vector<vector<int>> ans;
-        vector<vector<int>> nums =intervals;
         for(int i=0;i<n; i++)
         {
-        if(i<n-1 && nums[i][1]>=nums[i+1][0])
+        if(i<n-1 && intervals[i][1]>=intervals[i+1][0])
         {
-            nums[i+1][0]=nums[i][0];
-            if(nums[i][1]>nums[i+1][1])
+            intervals[i+1][0]=intervals[i][0];
+            if(intervals[i][1]>intervals[i+1][1])
             {
-                nums[i+1][1]=nums[i][1];
+                intervals[i+1][1]=intervals[i][1];
             }
         }
         else
-        ans.push_back(nums[i]);
+        ans.push_back(intervals[i]);
         }
         return ans;
     }
