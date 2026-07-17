@@ -53,3 +53,4 @@
 | [Count subarrays with given sum](Count-subarrays-with-given-sum) | [.cpp](Count-subarrays-with-given-sum/solution.cpp) |
 | [Pascal's Triangle I](Pascal-s-Triangle-I) | [.cpp](Pascal-s-Triangle-I/solution.cpp) |
 | [Majority Element-II](Majority-Element-II) | [.cpp](Majority-Element-II/solution.cpp) |
+| [3 Sum](3-Sum) | [.cpp](3-Sum/solution.cpp) |
