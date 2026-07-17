@@ -52,3 +52,4 @@
 | [Print the matrix in spiral manner](Print-the-matrix-in-spiral-manner) | [.cpp](Print-the-matrix-in-spiral-manner/solution.cpp) |
 | [Count subarrays with given sum](Count-subarrays-with-given-sum) | [.cpp](Count-subarrays-with-given-sum/solution.cpp) |
 | [Pascal's Triangle I](Pascal-s-Triangle-I) | [.cpp](Pascal-s-Triangle-I/solution.cpp) |
+| [Majority Element-II](Majority-Element-II) | [.cpp](Majority-Element-II/solution.cpp) |
