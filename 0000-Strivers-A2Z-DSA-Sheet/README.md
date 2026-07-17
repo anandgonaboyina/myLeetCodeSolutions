@@ -54,3 +54,4 @@
 | [Pascal's Triangle I](Pascal-s-Triangle-I) | [.cpp](Pascal-s-Triangle-I/solution.cpp) |
 | [Majority Element-II](Majority-Element-II) | [.cpp](Majority-Element-II/solution.cpp) |
 | [3 Sum](3-Sum) | [.cpp](3-Sum/solution.cpp) |
+| [4 Sum](4-Sum) | [.cpp](4-Sum/solution.cpp) |
