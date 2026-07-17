@@ -1,5 +1,5 @@
 //leetcode problem : 704 binary search
-//my brute force solution
+//my brute force solution is optimal solution
 class Solution {
 public:
     int search(vector<int>& nums, int target)
