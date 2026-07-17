@@ -49,3 +49,4 @@
 | [Longest Consecutive Sequence in an Array](Longest-Consecutive-Sequence-in-an-Array) | [.cpp](Longest-Consecutive-Sequence-in-an-Array/solution.cpp) |
 | [Set Matrix Zeroes](Set-Matrix-Zeroes) | [.cpp](Set-Matrix-Zeroes/solution.cpp) |
 | [Rotate matrix by 90 degrees](Rotate-matrix-by-90-degrees) | [.cpp](Rotate-matrix-by-90-degrees/solution.cpp) |
+| [Print the matrix in spiral manner](Print-the-matrix-in-spiral-manner) | [.cpp](Print-the-matrix-in-spiral-manner/solution.cpp) |
