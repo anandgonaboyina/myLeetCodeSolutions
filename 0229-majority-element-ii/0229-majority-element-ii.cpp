@@ -56,24 +56,12 @@ public:
         for(int x : nums)
         {
             if(x == m1)
-                {
                     cnt1++;
-                    if(cnt1>n/3)
-                        {
-                        cnt1=INT_MIN;
-                        ans.push_back(m1);
-                        }
-                }
            else if(x==m2)  //else if m1=m2 to avoid duplicates
-                {
                     cnt2++;
-                    if(cnt2>n/3)
-                        {
-                            cnt2 =INT_MIN;
-                            ans.push_back(m2);
-                        }
-                }
         }
+        if(cnt1 > n/3) ans.push_back(m1);
+        if(cnt2 > n/3) ans.push_back(m2);
         return ans;
 
     }
