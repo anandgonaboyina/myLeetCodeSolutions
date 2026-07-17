@@ -12,7 +12,7 @@ class Solution {
                 maxL = i+1;
             else if(mp.find(sum-0) !=mp.end())
                 {
-                    maxL = max(maxL, i-mp[sum]+1);
+                    maxL = max(maxL, i-mp[sum]);
                 }
         if(mp.find(sum) == mp.end())
             mp[sum]=i;
