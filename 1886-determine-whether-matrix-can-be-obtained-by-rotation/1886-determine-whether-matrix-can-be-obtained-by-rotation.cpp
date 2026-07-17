@@ -3,11 +3,11 @@ public:
     bool findRotation(vector<vector<int>>& mat, vector<vector<int>>& target)
     {
         int n= mat.size();
-        int rotCnt=0; bool eql=true;
+        int rotCnt=0;
         while(rotCnt<4)
         {
-    /*
-        eql=true;
+    /*  manually checking
+        bool eql=true;
         for(int i=0; i<n; i++)
         {    
             for(int j=0; j<n; j++)
