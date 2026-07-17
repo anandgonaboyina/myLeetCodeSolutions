@@ -1,39 +1,43 @@
-//Brute force solution
+//my brute force solution
 /*
-class Solution {
+class Solution{
 public:
-    vector<int> twoSum(vector<int>& nums, int target) {
-        int n = nums.size();
+    int subarraySum(vector<int> &nums, int k)
+    {
+        int n=nums.size(), cnt=0;
         for(int i=0; i<n; i++)
         {
-        for(int j=i+1; j<n; j++)
-        {
-            if(nums[i]+nums[j]==target)
-            return {i,j};
+            int sum=0;
+            for(int j=i; j<n; j++)
+            {
+                sum += nums[j];
+                if(sum==k)
+                    cnt++;
+            }
         }
-        }
-        return {-1,-1};
+        return cnt;
     }
 };
-*/
-/////////////////////////////////////////////////////////////////////
-//////////////if array is sorted we can use two pointer approach
-// as we know if new element is bigger or smaller
-// we can get extra space as 1 with tc N
 
-// Better Approach for unsorted array tc is N
-class Solution {
+*/
+//otpimal approach
+class Solution{
 public:
-    vector<int> twoSum(vector<int>& nums, int target) 
+    int subarraySum(vector<int> &nums, int k)
     {
-        unordered_map<int, int> mp;
-        int n=nums.size();
+        int n=nums.size(), cnt=0;
+        unordered_map<int, int>mp;
+        int sum=0, prefixSum=0;
         for(int i=0; i<n; i++)
-        {
-            if(mp.find(target-nums[i]) != mp.end())
-                return {mp[target-nums[i]], i};
-            mp[nums[i]]=i;
+        {   sum +=nums[i];
+            if(sum==k)
+                cnt++;
+            if(mp.find(sum-k) != mp.end())
+                {
+                    cnt = cnt + mp[sum-k];
+                }
+            mp[sum]++;
         }
-        return {-1,-1};
+        return cnt;
     }
 };
