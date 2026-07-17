@@ -2,7 +2,7 @@
 /*
 class Solution {
 public:
-    vector<int> majorityElementTwo(vector<int>& nums) 
+    vector<int> majorityElement(vector<int>& nums) 
     {
        int n =nums.size();
        unordered_map<int, int> mp;
@@ -24,7 +24,7 @@ public:
 //by using Boyer-Moore Voting Algorithm
 class Solution {
 public:
-    vector<int> majorityElementTwo(vector<int>& nums) 
+    vector<int> majorityElement(vector<int>& nums) 
     {
        int n =nums.size();
        int m1, m1Cnt=0;
@@ -56,24 +56,12 @@ public:
         for(int x : nums)
         {
             if(x == m1)
-                {
                     cnt1++;
-                    if(cnt1>n/3)
-                        {
-                        cnt1=INT_MIN;
-                        ans.push_back(m1);
-                        }
-                }
            else if(x==m2)  //else if m1=m2 to avoid duplicates
-                {
                     cnt2++;
-                    if(cnt2>n/3)
-                        {
-                            cnt2 =INT_MIN;
-                            ans.push_back(m2);
-                        }
-                }
         }
+        if(cnt1 > n/3) ans.push_back(m1);
+        if(cnt2 > n/3) ans.push_back(m2);
         return ans;
 
     }
