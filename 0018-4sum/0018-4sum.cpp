@@ -1,4 +1,35 @@
-//my brute force solution = optimal 
+// first brute force solution
+/*
+class Solution {
+public:
+    vector<vector<int>> fourSum(vector<int>& nums, int target) 
+    {
+        vector<vector<int>> sol;
+        int n = nums.size();
+           for(int i=0; i<n; i++)
+           {
+                for(int j=i; j<n; j++)
+                {
+                    vector<int> temp;
+                   if(nums[i]+nums[j]+nums[n-1-i]+nums[n-1-j]==target && !(nums[i]==nums[j]==nums[n-1-i]==nums[n-1-j]))  
+                    {       temp.push_back(nums[i]);
+                            temp.push_back(nums[j]);
+                            temp.push_back(nums[n-1-i]);
+                            temp.push_back(nums[n-1-j]);
+                            sol.push_back(temp);
+                    }
+
+                }
+ 
+           }
+        return sol;
+                
+    }
+};
+
+*/
+////////////////////////////////////
+//my optimal  solution
 class Solution {
 public:
     vector<vector<int>> fourSum(vector<int>& nums, int target)
@@ -41,38 +72,3 @@ public:
 };
 
 
-
-
-
-
-
-
-////////////////////////////////////////////////
-
-
-// class Solution {
-// public:
-//     vector<vector<int>> fourSum(vector<int>& nums, int target) 
-//     {
-//         vector<vector<int>> sol;
-//         int n = nums.size();
-//            for(int i=0; i<n; i++)
-//            {
-//                 for(int j=i; j<n; j++)
-//                 {
-//                     vector<int> temp;
-//                    if(nums[i]+nums[j]+nums[n-1-i]+nums[n-1-j]==target && !(nums[i]==nums[j]==nums[n-1-i]==nums[n-1-j]))  
-//                     {       temp.push_back(nums[i]);
-//                             temp.push_back(nums[j]);
-//                             temp.push_back(nums[n-1-i]);
-//                             temp.push_back(nums[n-1-j]);
-//                             sol.push_back(temp);
-//                     }
-
-//                 }
- 
-//            }
-//         return sol;
-                
-//     }
-// };
