@@ -47,7 +47,6 @@ Fragility: The dense block of nested if statements is very hard to maintain
 */
 ///////////////////////////////////////////////
 //better approach
-
 class Solution {
 public:
     vector<int> spiralOrder(vector<vector<int>>& matrix) 
