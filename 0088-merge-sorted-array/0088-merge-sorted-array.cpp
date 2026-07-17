@@ -39,11 +39,6 @@ public:
             }
             p--;
         }
-        while(r1>=0)
-        {
-            nums1[p] = nums1[r1];
-            r1--; p--;
-        }
         while(r2>=0)
         {
             nums1[p]=nums2[r2];
