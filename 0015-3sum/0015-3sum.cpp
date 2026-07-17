@@ -35,6 +35,8 @@ public:
         vector<vector<int>> ans;
         for(int i=0; i<n; i++)
         {
+            if(nums[i]>0)
+                break;  // since as array sorted there is no way to get zero if current is greater then zero
             if(i>0 && nums[i]==nums[i-1])
                 continue; // skiping the duplicate value
             int left = i+1, right=n-1;
