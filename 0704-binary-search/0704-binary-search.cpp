@@ -8,7 +8,8 @@ public:
         int j=n-1;
         while(i<=j)
         {
-            int m = (i+j)/2;
+            int m =   i + (j-i)/2;
+            // (i+j)/2; may give integer overflow for 32 bit if array size if large before divison happen
             if(nums[m]== target)
                 return m;
             else if(target>nums[m])
