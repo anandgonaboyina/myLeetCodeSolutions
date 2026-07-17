@@ -6,6 +6,7 @@ public:
         int rotCnt=0; bool eql=true;
         while(rotCnt<4)
         {
+    /*
         eql=true;
         for(int i=0; i<n; i++)
         {    
@@ -16,7 +17,11 @@ public:
                         break;
                     }
         }
-        if(eql) return true;     
+        if(eql) return true;
+    */
+        /// OR AS Cpp can do direct comparision with == element wise for vectors
+        if(mat==target) return true;
+
         for(int i=0; i<n; i++)
         {   for(int j=i+1; j<n; j++)
                 swap(mat[i][j], mat[j][i]);
@@ -24,6 +29,6 @@ public:
         }
         rotCnt++;
         }
-        return eql;
+        return false;
     }
 };
