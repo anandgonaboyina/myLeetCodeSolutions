@@ -5,7 +5,7 @@ public:
     {
         int n = nums.size();
         int left = 0, right=n-1;
-        vector<int> ans(2);
+        vector<int> ans(2, -1);
         while(left<=right)
         {
             int mid = left + (right-left)/2;
