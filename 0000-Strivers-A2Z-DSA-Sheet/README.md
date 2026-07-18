@@ -61,3 +61,4 @@
 | [Merge two sorted arrays without extra space](Merge-two-sorted-arrays-without-extra-space) | [.cpp](Merge-two-sorted-arrays-without-extra-space/solution.cpp) |
 | [Search X in sorted array](Search-X-in-sorted-array) | [.cpp](Search-X-in-sorted-array/solution.cpp) |
 | [Find the repeating and missing number](Find-the-repeating-and-missing-number) | [.cpp](Find-the-repeating-and-missing-number/solution.cpp) |
+| [Count Inversions](Count-Inversions) | [.cpp](Count-Inversions/solution.cpp) |
