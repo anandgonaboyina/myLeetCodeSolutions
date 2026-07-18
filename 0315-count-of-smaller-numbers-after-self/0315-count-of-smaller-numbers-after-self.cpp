@@ -36,6 +36,8 @@ public:
 */
 
 // optimal solution using merge sort algorithem logic
+// it beats only below 30% 
+//need to learn that binary bitwise method for this once after finish of all DSA TOPICS as it give beats +90% beats
 class Solution {
 public:
 
