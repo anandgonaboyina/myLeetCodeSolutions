@@ -31,6 +31,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0229-majority-element-ii](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0229-majority-element-ii) |
 | [0268-missing-number](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0268-missing-number) |
 | [0283-move-zeroes](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0283-move-zeroes) |
+| [0315-count-of-smaller-numbers-after-self](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0315-count-of-smaller-numbers-after-self) |
 | [0485-max-consecutive-ones](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0485-max-consecutive-ones) |
 | [0540-single-element-in-a-sorted-array](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0540-single-element-in-a-sorted-array) |
 | [0560-subarray-sum-equals-k](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0560-subarray-sum-equals-k) |
@@ -76,6 +77,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0268-missing-number](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0268-missing-number) |
+| [0315-count-of-smaller-numbers-after-self](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0315-count-of-smaller-numbers-after-self) |
 | [0540-single-element-in-a-sorted-array](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0540-single-element-in-a-sorted-array) |
 | [0704-binary-search](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0704-binary-search) |
 ## Bit Manipulation
@@ -88,6 +90,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0169-majority-element](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0169-majority-element) |
+| [0315-count-of-smaller-numbers-after-self](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0315-count-of-smaller-numbers-after-self) |
 ## Counting
 |  |
 | ------- |
@@ -142,5 +145,21 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0560-subarray-sum-equals-k](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0560-subarray-sum-equals-k) |
+## Binary Indexed Tree
+|  |
+| ------- |
+| [0315-count-of-smaller-numbers-after-self](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0315-count-of-smaller-numbers-after-self) |
+## Segment Tree
+|  |
+| ------- |
+| [0315-count-of-smaller-numbers-after-self](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0315-count-of-smaller-numbers-after-self) |
+## Merge Sort
+|  |
+| ------- |
+| [0315-count-of-smaller-numbers-after-self](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0315-count-of-smaller-numbers-after-self) |
+## Ordered Set
+|  |
+| ------- |
+| [0315-count-of-smaller-numbers-after-self](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0315-count-of-smaller-numbers-after-self) |
 <!---LeetCode Topics End-->
 
