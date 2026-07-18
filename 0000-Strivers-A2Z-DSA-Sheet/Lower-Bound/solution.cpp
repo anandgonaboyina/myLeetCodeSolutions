@@ -31,6 +31,6 @@ public:
                 }
             p++;
         }
-        return -1; //to skip compilation error
+        return -1; //just to skip compilation error
     }
 };
