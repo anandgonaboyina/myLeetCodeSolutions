@@ -68,3 +68,4 @@
 | [Floor and Ceil in Sorted Array](Floor-and-Ceil-in-Sorted-Array) | [.cpp](Floor-and-Ceil-in-Sorted-Array/solution.cpp) |
 | [Count Occurrences in a Sorted Array](Count-Occurrences-in-a-Sorted-Array) | [.cpp](Count-Occurrences-in-a-Sorted-Array/solution.cpp) |
 | [Search in rotated sorted array-I](Search-in-rotated-sorted-array-I) | [.cpp](Search-in-rotated-sorted-array-I/solution.cpp) |
+| [Search in rotated sorted array-II](Search-in-rotated-sorted-array-II) | [.cpp](Search-in-rotated-sorted-array-II/solution.cpp) |
