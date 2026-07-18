@@ -1,16 +1,18 @@
-//better solution //need to complete will see later
+//my burte force optimal solution
 class Solution {
 public:
     vector<int> findErrorNums(vector<int>& nums) 
     {
         int n=nums.size();
-        int arrSum=0, sum=n*(n+1)/2;
+        long long arrSum=0, sum=(long long)n*(n+1)/2;  
+        // here 10^4 array size so int enough but 
+        //if 10^5 sum aslo will get integer overflow
         long long arrSum2=0;
-        long long sum2= (long long)n*(n+1)*(2*n+1)/6;
+        long long sum2= (long long)n*(long long)(n+1)*(2*n+1)/6;
         for(int i=0; i<n; i++)
         {
             arrSum +=nums[i];
-            arrSum2 +=nums[i]*nums[i];
+            arrSum2 += (long long)nums[i]*(long  long)nums[i];
         }
         int x=(sum2-arrSum2)/(sum-arrSum); // here x = missN + reapN as from sum have missN and arrSum have repeatN
         int missN =( x + (sum-arrSum) )/2;
