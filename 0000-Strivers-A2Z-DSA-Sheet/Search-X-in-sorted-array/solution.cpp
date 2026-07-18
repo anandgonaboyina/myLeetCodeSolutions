@@ -1,5 +1,7 @@
 //leetcode problem : 704 binary search
 //my brute force solution is optimal solution
+//iterative method
+/*
 class Solution {
 public:
     int search(vector<int>& nums, int target)
@@ -20,4 +22,29 @@ public:
         }
         return -1;
     }
+};
+
+*/
+
+//recursive method
+class Solution {
+public:
+    int bSearch(vector<int>&nums, int left, int right, int target)
+    {
+        if(left>right) return -1;
+        int mid = left + (right-left)/2;
+        if(target==nums[mid])
+            return mid;
+        else if(target<nums[mid])
+            return bSearch(nums, left, mid-1, target);
+        else
+            return bSearch(nums, mid+1, right, target);
+    }
+
+    int search(vector<int>& nums, int target)
+     {
+        int n = nums.size();
+            int res = bSearch(nums, 0, n-1, target);
+        return res;
+    } 
 };
