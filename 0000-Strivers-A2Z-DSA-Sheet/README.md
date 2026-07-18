@@ -63,3 +63,4 @@
 | [Find the repeating and missing number](Find-the-repeating-and-missing-number) | [.cpp](Find-the-repeating-and-missing-number/solution.cpp) |
 | [Count Inversions](Count-Inversions) | [.cpp](Count-Inversions/solution.cpp) |
 | [Lower Bound](Lower-Bound) | [.cpp](Lower-Bound/solution.cpp) |
+| [Upper Bound](Upper-Bound) | [.cpp](Upper-Bound/solution.cpp) |
