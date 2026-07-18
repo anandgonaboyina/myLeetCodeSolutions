@@ -1,4 +1,4 @@
-//my brute force solution
+//my brute force solution is optimal solution
 class Solution {
 public:
     int searchInsert(vector<int>& nums, int target)
@@ -22,6 +22,6 @@ public:
                 }
             p++;
         }
-        return -1;
+        return -1; //just to skip compilation error
     }
 };
