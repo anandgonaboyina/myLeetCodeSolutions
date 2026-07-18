@@ -29,6 +29,6 @@ public:
                     ans=mid+1;
                 }
         }
-        return ans; //just to skip compilation error
+        return ans;
     }
 };
