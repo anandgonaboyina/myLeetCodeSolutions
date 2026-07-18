@@ -14,23 +14,21 @@ public:
     {
         int n = nums.size();
         int left=0, right=n-1;
-        int p=0;
-        while(p<n)
+        int ans;
+        while(left<=right)
         {
-            if(target==nums[left])
-                return left;
-            else if(target==nums[right])
-                return right;
-            else if(target<nums[left])
-                return left;
-            else if(target>nums[right])
-                return right+1;
-            else 
+            int mid = left + (right-left)/2;
+            if(target <= nums[mid])
                 {
-                    left++; right--;
+                    ans =mid;
+                    right=mid-1;
                 }
-            p++;
+            else
+                {
+                    left=mid+1;
+                    ans=mid+1;
+                }
         }
-        return -1; //just to skip compilation error
+        return ans; //just to skip compilation error
     }
 };
