@@ -34,6 +34,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0485-max-consecutive-ones](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0485-max-consecutive-ones) |
 | [0540-single-element-in-a-sorted-array](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0540-single-element-in-a-sorted-array) |
 | [0560-subarray-sum-equals-k](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0560-subarray-sum-equals-k) |
+| [0645-set-mismatch](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0645-set-mismatch) |
 | [0704-binary-search](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0704-binary-search) |
 | [1886-determine-whether-matrix-can-be-obtained-by-rotation](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/1886-determine-whether-matrix-can-be-obtained-by-rotation) |
 | [2149-rearrange-array-elements-by-sign](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/2149-rearrange-array-elements-by-sign) |
@@ -59,6 +60,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0169-majority-element](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0169-majority-element) |
 | [0229-majority-element-ii](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0229-majority-element-ii) |
 | [0268-missing-number](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0268-missing-number) |
+| [0645-set-mismatch](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0645-set-mismatch) |
 ## Hash Table
 |  |
 | ------- |
@@ -69,6 +71,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0229-majority-element-ii](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0229-majority-element-ii) |
 | [0268-missing-number](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0268-missing-number) |
 | [0560-subarray-sum-equals-k](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0560-subarray-sum-equals-k) |
+| [0645-set-mismatch](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0645-set-mismatch) |
 ## Binary Search
 |  |
 | ------- |
@@ -80,6 +83,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0136-single-number](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0136-single-number) |
 | [0268-missing-number](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0268-missing-number) |
+| [0645-set-mismatch](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0645-set-mismatch) |
 ## Divide and Conquer
 |  |
 | ------- |
