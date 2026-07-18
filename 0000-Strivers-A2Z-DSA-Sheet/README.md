@@ -64,3 +64,4 @@
 | [Count Inversions](Count-Inversions) | [.cpp](Count-Inversions/solution.cpp) |
 | [Lower Bound](Lower-Bound) | [.cpp](Lower-Bound/solution.cpp) |
 | [Upper Bound](Upper-Bound) | [.cpp](Upper-Bound/solution.cpp) |
+| [Search insert position](Search-insert-position) | [.cpp](Search-insert-position/solution.cpp) |
