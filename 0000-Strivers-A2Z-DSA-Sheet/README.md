@@ -66,3 +66,4 @@
 | [Upper Bound](Upper-Bound) | [.cpp](Upper-Bound/solution.cpp) |
 | [Search insert position](Search-insert-position) | [.cpp](Search-insert-position/solution.cpp) |
 | [Floor and Ceil in Sorted Array](Floor-and-Ceil-in-Sorted-Array) | [.cpp](Floor-and-Ceil-in-Sorted-Array/solution.cpp) |
+| [Count Occurrences in a Sorted Array](Count-Occurrences-in-a-Sorted-Array) | [.cpp](Count-Occurrences-in-a-Sorted-Array/solution.cpp) |
