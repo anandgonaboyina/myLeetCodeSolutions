@@ -65,3 +65,4 @@
 | [Lower Bound](Lower-Bound) | [.cpp](Lower-Bound/solution.cpp) |
 | [Upper Bound](Upper-Bound) | [.cpp](Upper-Bound/solution.cpp) |
 | [Search insert position](Search-insert-position) | [.cpp](Search-insert-position/solution.cpp) |
+| [Floor and Ceil in Sorted Array](Floor-and-Ceil-in-Sorted-Array) | [.cpp](Floor-and-Ceil-in-Sorted-Array/solution.cpp) |
