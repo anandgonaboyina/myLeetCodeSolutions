@@ -69,3 +69,4 @@
 | [Count Occurrences in a Sorted Array](Count-Occurrences-in-a-Sorted-Array) | [.cpp](Count-Occurrences-in-a-Sorted-Array/solution.cpp) |
 | [Search in rotated sorted array-I](Search-in-rotated-sorted-array-I) | [.cpp](Search-in-rotated-sorted-array-I/solution.cpp) |
 | [Search in rotated sorted array-II](Search-in-rotated-sorted-array-II) | [.cpp](Search-in-rotated-sorted-array-II/solution.cpp) |
+| [Find minimum in Rotated Sorted Array](Find-minimum-in-Rotated-Sorted-Array) | [.cpp](Find-minimum-in-Rotated-Sorted-Array/solution.cpp) |
