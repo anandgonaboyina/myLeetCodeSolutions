@@ -1,7 +1,7 @@
 //optimal solution
 class Solution {
 public:
-int findPivot(vector<int>&nums, int target)
+int findMinInd(vector<int>&nums, int target)
     {
         int n = nums.size();
         int left=0, right=n-1;
@@ -37,10 +37,10 @@ int findPivot(vector<int>&nums, int target)
     bool search(vector<int>& nums, int target) 
     {
         int n = nums.size();
-        int pivot = findPivot(nums, target);
+        int minInd = findMinInd(nums, target);
         if(target>nums[n-1])
-            return findInd(nums, 0, pivot-1, target);
+            return findInd(nums, 0, minInd-1, target);
         else
-        return findInd(nums, pivot, n-1, target);
+        return findInd(nums, minInd, n-1, target);
     }
 };
