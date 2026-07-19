@@ -1,7 +1,7 @@
 //my solution
 class Solution {
 public:
-    int findPivot(vector<int>&nums)
+    int findMinInd(vector<int>&nums)
     {
         int n = nums.size();
         int left =0, right=n-1;
@@ -34,15 +34,24 @@ public:
     int search(vector<int>& nums, int target) 
     {
         int n = nums.size();
-        int pInd = findPivot(nums);
+        int minInd = findMinInd(nums);
         if(target>nums[n-1])
-            return findInd(nums, 0, pInd-1, target);
-        return findInd(nums, pInd, n-1, target);
+            return findInd(nums, 0, minInd-1, target);
+        return findInd(nums, minInd, n-1, target);
     }
 };
 
 
-///////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+//discard dont look at this  all
+///////////////////////////////////////////////////////////////////\
+//its not with tc as logN X wrong approach
 //previous long ago solve solution dont even know when did i do
 // as i used to be consistant less than 2 days at that time
 /*
