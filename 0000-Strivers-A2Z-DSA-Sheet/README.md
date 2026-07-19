@@ -74,3 +74,4 @@
 | [Single element in sorted array](Single-element-in-sorted-array) | [.cpp](Single-element-in-sorted-array/solution.cpp) |
 | [Find peak element](Find-peak-element) | [.cpp](Find-peak-element/solution.cpp) |
 | [Find square root of a number](Find-square-root-of-a-number) | [.cpp](Find-square-root-of-a-number/solution.cpp) |
+| [Find Nth root of a number](Find-Nth-root-of-a-number) | [.cpp](Find-Nth-root-of-a-number/solution.cpp) |
