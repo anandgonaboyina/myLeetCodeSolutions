@@ -1,74 +1,54 @@
-// first brute force solution
+// my  optimal solution
+class Solution {
+public:
+    int singleNonDuplicate(vector<int>& nums) 
+    {
+        int left=0, right = nums.size()-1;
+            while(left<right)
+            {
+                int mid = left + (right-left)/2;
+                if(mid%2 == 1)
+                    mid--;
+                if(nums[mid]==nums[mid+1])
+                    left = mid +2;
+                else 
+                    right = mid;
+            }
+            return nums[left];
+    }
+};
+
+//Notes for solving: 
+/*
+Because almost every number appears twice, they naturally form pairs that sit on Even and Odd indices.
+
+Look at this array: [1, 1, 2, 3, 3, 4, 4]
+
+Before the single element: Pairs always start on an Even index. (e.g., nums[0] == nums[1])
+
+The single element: Takes up exactly one spot, which will always be an Even index (index 2 is the number 2).
+
+After the single element: Everything gets shifted by one space. Now, pairs start on an Odd index. (e.g., nums[3] == nums[4])
+
+with Binary Search Strategy:
+When you calculate mid, look at its matching partner. Are they sitting on an (Even, Odd) rhythm? If yes, the single element hasn't messed up the line yet — search right. If the rhythm is backward, the single element is already behind you — search left.
+If mid lands on an odd index, just do mid-- to push it back to the start of the pair. Then, you only ever have to check one thing: does nums[mid] match nums[mid + 1]?
+*/
+
+
+// not a binary search just one of the search for unsorted array
+
 /*
 class Solution {
 public:
-    vector<vector<int>> fourSum(vector<int>& nums, int target) 
+    int singleNonDuplicate(vector<int>& nums) 
     {
-        vector<vector<int>> sol;
-        int n = nums.size();
-           for(int i=0; i<n; i++)
-           {
-                for(int j=i; j<n; j++)
-                {
-                    vector<int> temp;
-                   if(nums[i]+nums[j]+nums[n-1-i]+nums[n-1-j]==target && !(nums[i]==nums[j]==nums[n-1-i]==nums[n-1-j]))  
-                    {       temp.push_back(nums[i]);
-                            temp.push_back(nums[j]);
-                            temp.push_back(nums[n-1-i]);
-                            temp.push_back(nums[n-1-j]);
-                            sol.push_back(temp);
-                    }
-
-                }
- 
-           }
-        return sol;
-                
-    }
-};
-
-*/
-////////////////////////////////////
-//my optimal  solution
-class Solution {
-public:
-    vector<vector<int>> fourSum(vector<int>& nums, int target)
-    {
-        int n = nums.size();
-        vector<vector<int>> ans;
-        sort(nums.begin(), nums.end());
-        for(int i=0; i<n; i++)
+        int xorN = 0;
+        for(int x : nums)
         {
-        if(nums[i]>target && nums[i] >=0) 
-            break;
-            if(i > 0 && nums[i] == nums[i-1])
-                continue;
-            for(int j=i+1; j<n; j++)
-            {
-                if(j > i+1 && nums[j] == nums[j-1])
-                    continue;
-                int left=j+1, right=n-1;
-                while(left<right)
-                {
-                    long long sum = (long long)(nums[i]) +nums[j]+nums[left]+nums[right];
-                    if(sum-target < 0)
-                        left++;
-                    else if(sum-target > 0)
-                        right--;
-                    else
-                    {
-                        ans.push_back({nums[i], nums[j], nums[left], nums[right]});
-                        left++; right--;
-                        while(left<right && nums[left]==nums[left-1])
-                            left++;
-                        while(left<right && nums[right]==nums[right+1])
-                            right--;
-                    }
-                }
-            }
+            xorN ^= x;
         }
-        return ans;
+        return xorN;
     }
 };
-
-
+*/
