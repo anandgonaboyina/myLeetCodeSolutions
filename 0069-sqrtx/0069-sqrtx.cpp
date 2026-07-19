@@ -16,7 +16,6 @@ public:
 */
 //optimal solution with binary search
 
-
 class Solution {
 public:
     int mySqrt(int x)
@@ -26,7 +25,7 @@ public:
         while(left<=right)
             {
               int  mid = left + (right-left)/2;
-                if((long long)mid*mid <= x)
+                if((long long)mid*mid <= x)   // or mid <= x/mid to overcome integer overflow
                     {
                         left = mid+1;
                         ans = mid;
