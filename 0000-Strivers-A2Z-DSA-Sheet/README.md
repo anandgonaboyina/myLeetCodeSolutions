@@ -71,3 +71,4 @@
 | [Search in rotated sorted array-II](Search-in-rotated-sorted-array-II) | [.cpp](Search-in-rotated-sorted-array-II/solution.cpp) |
 | [Find minimum in Rotated Sorted Array](Find-minimum-in-Rotated-Sorted-Array) | [.cpp](Find-minimum-in-Rotated-Sorted-Array/solution.cpp) |
 | [Find out how many times the array is rotated](Find-out-how-many-times-the-array-is-rotated) | [.cpp](Find-out-how-many-times-the-array-is-rotated/solution.cpp) |
+| [Single element in sorted array](Single-element-in-sorted-array) | [.cpp](Single-element-in-sorted-array/solution.cpp) |
