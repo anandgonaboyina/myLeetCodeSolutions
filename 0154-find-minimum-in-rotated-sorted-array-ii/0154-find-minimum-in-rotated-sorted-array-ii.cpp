@@ -1,3 +1,4 @@
+//my optimal solution
 class Solution {
 public:
     int findMinIndex(vector<int>&nums)
