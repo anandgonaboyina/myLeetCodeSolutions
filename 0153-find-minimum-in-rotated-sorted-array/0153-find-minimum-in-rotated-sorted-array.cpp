@@ -1,3 +1,4 @@
+//my solution adopted from previous rotated search problem fucntion just find the starting index of the nums
 class Solution {
 public:
     int findPivot(vector<int> &nums)
@@ -17,8 +18,7 @@ public:
     int findMin(vector<int>& nums) 
     {
         int n = nums.size();
-        int pivot = findPivot(nums);
-        int minN = nums[pivot];
-        return minN;
+        int minIndex = findPivot(nums);
+        return nums[minIndex];
     }
 };
