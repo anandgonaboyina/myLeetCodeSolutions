@@ -1,3 +1,4 @@
+//optimal solution
 class Solution {
 public:
     int mostFrequentElement(vector<int>& nums) {
@@ -17,3 +18,13 @@ public:
     return maxCnt.first;
     }
 };
+
+mp;
+pair<int, int> maxCnt;
+mp[nums[i]]++;
+if mp[nums[i]]>maxCnt.second
+  maxCnt = {nums[i], mp[nums]}
+else mp[nums[i]]==maxCnt.second && nums[i]<maxCnt.first
+  maxCnt = {nums[i], mp[nums]}
+
+
