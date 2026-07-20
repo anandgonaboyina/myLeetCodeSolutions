@@ -1,3 +1,4 @@
+//solution
 class Solution{	
 	public:
 		int NnumbersSum(int N){
