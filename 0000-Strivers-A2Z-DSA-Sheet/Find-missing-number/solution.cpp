@@ -1,14 +1,18 @@
-//leetcode problem
 class Solution {
 public:
-    int missingNumber(vector<int>& nums) {
-       int xor1 =0, xor2=0;
+    vector<int> selectionSort(vector<int>& nums) {
         int n = nums.size();
-       for(int i=0; i<n; i++)
-       {
-            xor1 ^=nums[i];
-            xor2 ^=(i+1);
-       }
-       return xor1 ^ xor2;
+        for(int i=0; i<n-1; i++)
+        {
+            int min=i;
+            for(int j=i+1; j<n; j++)
+            {
+                if(nums[j]<nums[min])
+                    min=j;
+            }
+            if(min !=i)
+                swap(nums[i], nums[min]);
+        }
+        return nums;
     }
 };
