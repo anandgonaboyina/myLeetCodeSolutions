@@ -1,15 +1,21 @@
+//
 class Solution{
-    string reverseString(string& s, int n)
+// brute force reverse string and check
+// discarded function as it creates the copy of substring every time;
+    string reverseString(string& s)
     {
-        if(n<1) return "";
-        return string(1, s[n-1])+reverseString(s, n-1);
+        int l = s.length();
+        if(l<1) return "";
+        return s.back() + reverseString(s.substr(0, l-1));
     }
-    bool checkP(string str, int s, int e)
+
+//clean Optimal two pointer approach
+    bool checkPalidrone(string &s, int left, int right)
     {
-        if(s >= e) return true;
-        return (str[s] == str[e]) && checkP(str, s+1, e-1);
+        if(left>=right) return true;
+        return ( s[left]==s[right] ) && checkPalidrone(s, left+1, right-1);
     }
-	public:		
+	public:
 		bool palindromeCheck(string& s)
         {
 			//method 1
@@ -17,6 +23,7 @@ class Solution{
             // return reverseString(temp, temp.length())==s;
 
             //recurstion way
-            return checkP(s, 0, s.length()-1);
+            return checkPalidrone(s, 0, s.length()-1);
 		}
 };
+
