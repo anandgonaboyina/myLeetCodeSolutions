@@ -13,7 +13,11 @@ public:
             // {
             //     powerResult *= num%10;
             // }
+            // ans  += powerResult
         num = num/10;
+        if(ans>n)
+            return false;
+
        }
        return n==ans;
     }
