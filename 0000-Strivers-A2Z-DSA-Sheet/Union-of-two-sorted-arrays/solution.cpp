@@ -1,3 +1,18 @@
+// brute force Solution (n1+n2)log(n1+n2);
+class Solution {
+public:
+    vector<int> unionArray(vector<int>& nums1, vector<int>& nums2) 
+    {
+        int n1 = nums1.size(), n2 = nums2.size();
+        if(n1==0) return nums1;
+        if(n2==0) return nums2;
+        nums1.insert(nums1.end(), nums2.begin(), nums2.end());
+        set<int> st = set<int>(nums1.begin(), nums1.end());
+        vector<int> ans = vector<int>(st.begin(), st.end());
+        return ans;
+    }
+};
+
 // class Solution {
 // public:
 //     vector<int> unionArray(vector<int>& nums1, vector<int>& nums2)
@@ -27,7 +42,7 @@
 //  unordered_set<int> st;
 
 //Optimal approach
-
+/*
 class Solution {
 public:
     vector<int> unionArray(vector<int>& nums1, vector<int>& nums2)
@@ -76,3 +91,4 @@ public:
         return ans;
     }
 };
+*/
