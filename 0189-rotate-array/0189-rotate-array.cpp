@@ -1,4 +1,5 @@
-// class Solution {
+//my brute force solution for right rotation of the array by k times
+//class Solution {
 // public:
 //     void rotate(vector<int>& nums, int k) {
 //         int n = nums.size();
@@ -15,7 +16,9 @@
 //         }
 //     }
 // };
-////////////////////////////////////////////////////////////////////////////
+//////// NOTE ////////////
+// for left rotation (k+i)%n replace instead (n-k+i)%n
+////////////////////
 
 // for extra space 1
 // Reverse the entire array completely.
@@ -54,7 +57,6 @@
 
 
 //using the standard cpp library
-
 class Solution {
 public:
     void rotate(vector<int>& nums, int k) {
@@ -68,21 +70,3 @@ public:
 };
 
 
-////////////////////first method another formula to get backside equvalent/////////////////////
-// class Solution {
-// public:
-//     void rotate(vector<int>& nums, int k) 
-//     {
-//         int n=nums.size();
-//         k = k%n;
-//         if(k==0) return;
-//         vector<int> vt;
-//         for(int i=0; i<n; i++)
-//         {
-//             vt.push_back(nums[(k+i)%n]);
-//         }
-//         for(int i=0; i<n; i++)
-//             nums[i] = vt[i];
-//     return;
-//     }
-// };
