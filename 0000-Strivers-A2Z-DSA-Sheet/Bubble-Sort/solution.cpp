@@ -1,9 +1,9 @@
 class Solution {
 public:
     vector<int> bubbleSort(vector<int>& nums) {
-        int n = nums.size()-1;
+        int n = nums.size();
         bool flag =true;
-        for(int i=n; i>0; i--)
+        for(int i=n-1; i>0; i--)
         {
             flag =true;
             for(int j=1; j<=i; j++)
