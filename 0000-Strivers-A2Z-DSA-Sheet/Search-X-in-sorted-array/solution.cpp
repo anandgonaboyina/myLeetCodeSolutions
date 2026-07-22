@@ -7,18 +7,19 @@ public:
     int search(vector<int>& nums, int target)
      {
         int n = nums.size();
-        int i=0;
-        int j=n-1;
-        while(i<=j)
+        int left=0;
+        int right=n-1;
+        while(left<=right)
         {
-            int m =   i + (j-i)/2;
-            // (i+j)/2; may give integer overflow for 32 bit if array size if large before divison happen
-            if(nums[m]== target)
-                return m;
-            else if(target>nums[m])
-                i=m+1;
-            else if(target<nums[m])
-                j=m-1;
+            int mid = left + (right-left)/2;   
+            // (left+right)/2; may give integer overflow for 32 bit if array size if large 
+            // before divison happen
+            if(nums[mid]==target)
+                return mid;
+            else if(nums[mid]<target)
+                right=mid-1
+            else
+                left=mid+1;
         }
         return -1;
     }
@@ -48,3 +49,5 @@ public:
         return res;
     } 
 };
+
+
