@@ -5,7 +5,7 @@ int findMinInd(vector<int>&nums, int target)
     {
         int n = nums.size();
         int left=0, right=n-1;
-        while(left < right && nums[left]==nums[right])
+        while(left < right && nums[left]==nums[right])  // to clear the flat line form by duplicates
             left++;
         while(left<right)
         {
@@ -26,7 +26,7 @@ int findMinInd(vector<int>&nums, int target)
             int mid = left+(right-left)/2;
             if(target == nums[mid])
                 return true;
-            else if(target < nums[mid])   // to clear the flat line form by duplicates
+            else if(target < nums[mid])
                 right=mid-1;
             else
                 left=mid+1;
