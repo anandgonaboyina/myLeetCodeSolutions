@@ -5,7 +5,7 @@ int findMinInd(vector<int>&nums, int target)
     {
         int n = nums.size();
         int left=0, right=n-1;
-        while(left < right && nums[left]==nums[right])  // to clear the flat line form by duplicates
+        while(left < right && nums[left]==nums[right])   //to Trims matching edges to expose the true rotation cliff and prevent a false pivot.
             left++;
         while(left<right)
         {
@@ -40,7 +40,6 @@ int findMinInd(vector<int>&nums, int target)
         int minInd = findMinInd(nums, target);
         if(target>nums[n-1])
             return findInd(nums, 0, minInd-1, target);
-        else
         return findInd(nums, minInd, n-1, target);
     }
 };
