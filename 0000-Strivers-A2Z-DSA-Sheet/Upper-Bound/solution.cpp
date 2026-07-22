@@ -1,34 +1,27 @@
-//leetcode problem : 35 Search Insert Position
-// class Solution{
-// public:
-//     int lowerBound(vector<int> &nums, int x)
-//     {
-        
-//     }
-// };
-
-//my brute force solution is optimal solution
-class Solution {
+//similar problem leetcode problem : 35 Search Insert Position
+//just modification of it means dont return index of target if found that sit;
+class Solution{
 public:
-    int lowerBound(vector<int>& nums, int target)
+    int upperBound(vector<int> &nums, int x)
     {
         int n = nums.size();
         int left=0, right=n-1;
-        int ans;
+        int ans=n;   // if no num found size of array
         while(left<=right)
         {
             int mid = left + (right-left)/2;
-            if(target <= nums[mid])
-                {
-                    ans =mid;
-                    right=mid-1;
-                }
+            if(x < nums[mid])
+            {
+                ans = mid;
+                right = mid-1;
+            }
             else
-                {
-                    left=mid+1;
-                    ans=mid+1;
-                }
+            {
+                left = mid+1;
+            }
         }
-        return ans; //just to skip compilation error
+        return ans;
     }
 };
+
+
