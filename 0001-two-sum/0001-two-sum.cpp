@@ -1,28 +1,3 @@
-class Solution {
-public:
-    vector<int> twoSum(vector<int>& nums, int target) 
-    {
-        int n = nums.size();
-        for(int i=0; i<n-1; i++)
-        {
-            for(int j=i+1; j<n; j++)
-                {
-                    if(nums[i]+nums[j]==target)
-                        return {i, j};
-                }
-        }
-        return {-1, -1};
-    }
-};
-
-
-
-
-
-
-
-
-
 
 //my Brute force solution
 /*
@@ -48,7 +23,7 @@ public:
 // we can get extra space as 1 with tc N
 
 // Better Approach for unsorted array tc is N
-/*
+
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) 
@@ -64,7 +39,7 @@ public:
         return {-1,-1};
     }
 };
-*/
+
 
 
 //here in this problem we need to return orginial indexes so dont use if you want check below 
