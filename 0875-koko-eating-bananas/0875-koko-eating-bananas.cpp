@@ -70,13 +70,13 @@ public:
         {
             int k = left+ (right-left)/2;
             long long reqHours = calHours(piles, k);
-            if(reqHours>h)
-                left = k+1;
-            else
+            if(reqHours <= h)
                 {
                     ans = k;
                     right = k-1;
                 }
+            else
+                left = k+1;
         }
         return ans;
     }
