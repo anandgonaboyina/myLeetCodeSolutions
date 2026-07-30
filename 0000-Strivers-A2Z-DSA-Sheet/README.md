@@ -79,3 +79,4 @@
 | [First and last occurrence](First-and-last-occurrence) | [.cpp](First-and-last-occurrence/solution.cpp) |
 | [Koko eating bananas](Koko-eating-bananas) | [.cpp](Koko-eating-bananas/solution.cpp) |
 | [Minimum days to make M bouquets](Minimum-days-to-make-M-bouquets) | [.cpp](Minimum-days-to-make-M-bouquets/solution.cpp) |
+| [Find the smallest divisor](Find-the-smallest-divisor) | [.cpp](Find-the-smallest-divisor/solution.cpp) |
