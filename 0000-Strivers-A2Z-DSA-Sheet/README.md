@@ -77,3 +77,4 @@
 | [Find Nth root of a number](Find-Nth-root-of-a-number) | [.cpp](Find-Nth-root-of-a-number/solution.cpp) |
 | [Remove duplicates from sorted array](Remove-duplicates-from-sorted-array) | [.cpp](Remove-duplicates-from-sorted-array/solution.cpp) |
 | [First and last occurrence](First-and-last-occurrence) | [.cpp](First-and-last-occurrence/solution.cpp) |
+| [Koko eating bananas](Koko-eating-bananas) | [.cpp](Koko-eating-bananas/solution.cpp) |
