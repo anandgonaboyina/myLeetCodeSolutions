@@ -1,3 +1,4 @@
+// my optimal solution own logic adopted from koko eating banana patteren
 class Solution {
 public:
     int calBouqets(vector<int>&bloomDay, int k, int days)
