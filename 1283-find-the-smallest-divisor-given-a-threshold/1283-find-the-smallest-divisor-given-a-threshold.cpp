@@ -3,7 +3,7 @@ class Solution {
 public:
     int calDivSum(vector<int>&nums, int div)
     {
-        int sum=0;
+        long long sum=0;
         for(int x : nums)
         {
             sum += x/div;
