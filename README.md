@@ -46,6 +46,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0560-subarray-sum-equals-k](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0560-subarray-sum-equals-k) |
 | [0645-set-mismatch](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0645-set-mismatch) |
 | [0704-binary-search](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0704-binary-search) |
+| [0875-koko-eating-bananas](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0875-koko-eating-bananas) |
 | [1886-determine-whether-matrix-can-be-obtained-by-rotation](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/1886-determine-whether-matrix-can-be-obtained-by-rotation) |
 | [2149-rearrange-array-elements-by-sign](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/2149-rearrange-array-elements-by-sign) |
 ## Two Pointers
@@ -99,6 +100,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0315-count-of-smaller-numbers-after-self](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0315-count-of-smaller-numbers-after-self) |
 | [0540-single-element-in-a-sorted-array](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0540-single-element-in-a-sorted-array) |
 | [0704-binary-search](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0704-binary-search) |
+| [0875-koko-eating-bananas](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0875-koko-eating-bananas) |
 ## Bit Manipulation
 |  |
 | ------- |
