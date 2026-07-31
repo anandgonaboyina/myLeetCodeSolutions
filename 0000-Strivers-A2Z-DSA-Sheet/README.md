@@ -83,3 +83,4 @@
 | [Capacity to Ship Packages Within D Days](Capacity-to-Ship-Packages-Within-D-Days) | [.cpp](Capacity-to-Ship-Packages-Within-D-Days/solution.cpp) |
 | [Kth Missing Positive Number](Kth-Missing-Positive-Number) | [.cpp](Kth-Missing-Positive-Number/solution.cpp) |
 | [Aggressive Cows](Aggressive-Cows) | [.cpp](Aggressive-Cows/solution.cpp) |
+| [Book Allocation Problem](Book-Allocation-Problem) | [.cpp](Book-Allocation-Problem/solution.cpp) |
