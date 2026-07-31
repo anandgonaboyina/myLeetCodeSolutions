@@ -1,5 +1,49 @@
 
 //brute force solution
+/*
+public:
+{
+    int checkSubArrys(vector<int> &nums, int maxP)
+    {
+        int cnt=1;
+        int currentPages =0;
+        for(int x : nums)
+        {
+            if(currentPages + x > maxP)
+            {
+                cnt++;
+                currentPages = x;
+            }
+            else
+                currentPages +=x;
+        }
+        return cnt;
+    }
+
+    int splitArray(vector<int> &nums, int m)  
+    {
+        int n = nums.size();
+        if(n<m) return -1;
+        int left=1, right=0;
+
+        for(int x : nums)
+            {
+                left = max(left, x);
+                right += x;
+            }
+
+        if(n==m) return left;
+
+        while(left<=right)
+        {
+            if(checkSubArrys(nums, left) == m)
+                break;
+            left++;
+        }
+        return left;
+    }
+};
+*/
 
 // optimal bianry solution TC is N*log2(S) where  s= right-left;
 class Solution {
