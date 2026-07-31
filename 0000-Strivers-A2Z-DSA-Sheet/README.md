@@ -82,3 +82,4 @@
 | [Find the smallest divisor](Find-the-smallest-divisor) | [.cpp](Find-the-smallest-divisor/solution.cpp) |
 | [Capacity to Ship Packages Within D Days](Capacity-to-Ship-Packages-Within-D-Days) | [.cpp](Capacity-to-Ship-Packages-Within-D-Days/solution.cpp) |
 | [Kth Missing Positive Number](Kth-Missing-Positive-Number) | [.cpp](Kth-Missing-Positive-Number/solution.cpp) |
+| [Aggressive Cows](Aggressive-Cows) | [.cpp](Aggressive-Cows/solution.cpp) |
