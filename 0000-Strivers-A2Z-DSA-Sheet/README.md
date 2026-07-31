@@ -85,3 +85,4 @@
 | [Aggressive Cows](Aggressive-Cows) | [.cpp](Aggressive-Cows/solution.cpp) |
 | [Book Allocation Problem](Book-Allocation-Problem) | [.cpp](Book-Allocation-Problem/solution.cpp) |
 | [Split array - largest sum](Split-array-largest-sum) | [.cpp](Split-array-largest-sum/solution.cpp) |
+| [Painter's Partition](Painter-s-Partition) | [.cpp](Painter-s-Partition/solution.cpp) |
