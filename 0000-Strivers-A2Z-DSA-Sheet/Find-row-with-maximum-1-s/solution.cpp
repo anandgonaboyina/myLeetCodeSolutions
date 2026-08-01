@@ -41,7 +41,7 @@ class Solution {
                 if(mat[i][mid]==1)
                 {
                     right = mid-1;
-                    if(cnt < n-mid);
+                    if(cnt < n-mid)
                     {
                         ans = i;
                         cnt = n-mid;
