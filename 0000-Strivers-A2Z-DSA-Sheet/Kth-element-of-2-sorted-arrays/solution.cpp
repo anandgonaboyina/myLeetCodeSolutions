@@ -14,25 +14,37 @@ public:
        {
             if(a[i]<=b[j])
                 {
-                    i++;
                     kthNum++;
                     if(kthNum == k)
                         {
                             ans = a[i];
                             break;
                         }
+                    i++;
                 }
             else
                 {
-                    j++;
                     kthNum++;
                         if(kthNum == k)
                             {
-                                ans = b[j]
+                                ans = b[j];
                                 break;
                             }
+                    j++;
                 }
        }
+       while(i<=left && kthNum != k)
+       {
+            kthNum++;
+            ans = a[i];
+            i++;
+       }
+       while(j<=right && ktNum != k)
+       {
+            kthNum++;
+            ans = b[j];
+            j++;
+       }       
        return ans;
     }
 };
