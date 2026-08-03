@@ -90,3 +90,4 @@
 | [Kth element of 2 sorted arrays](Kth-element-of-2-sorted-arrays) | [.cpp](Kth-element-of-2-sorted-arrays/solution.cpp) |
 | [Find row with maximum 1's](Find-row-with-maximum-1-s) | [.cpp](Find-row-with-maximum-1-s/solution.cpp) |
 | [Find Peak Element - II](Find-Peak-Element-II) | [.cpp](Find-Peak-Element-II/solution.cpp) |
+| [Remove Outermost Parentheses](Remove-Outermost-Parentheses) | [.cpp](Remove-Outermost-Parentheses/solution.cpp) |
