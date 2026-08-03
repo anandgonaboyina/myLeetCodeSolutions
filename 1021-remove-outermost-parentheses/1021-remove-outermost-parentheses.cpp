@@ -1,4 +1,5 @@
 //my brute force solution got 100% beats
+// this is the optimal solution as Tc is N
 class Solution {
 public:
     string removeOuterParentheses(string s) 
