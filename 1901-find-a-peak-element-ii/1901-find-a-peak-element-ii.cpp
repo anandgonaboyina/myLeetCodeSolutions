@@ -25,7 +25,9 @@ public:
 };
 */
 //optimal solution with TC as MlogN
-// by first finding the 
+// by first going to middle column and there row wise search for maxRow in that as it was already max in Column
+// so need to check left and right to decide the peak
+// decide which side will have max then increment left or dicrement right with mid reference by checking the boundary
 class Solution {
 public:
     vector<int> findPeakGrid(vector<vector<int>>& mat) 
