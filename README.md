@@ -134,6 +134,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0014-longest-common-prefix](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0014-longest-common-prefix) |
+| [1021-remove-outermost-parentheses](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/1021-remove-outermost-parentheses) |
 ## Trie
 |  |
 | ------- |
@@ -203,5 +204,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0410-split-array-largest-sum](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0410-split-array-largest-sum) |
+## Stack
+|  |
+| ------- |
+| [1021-remove-outermost-parentheses](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/1021-remove-outermost-parentheses) |
+## Bracket Sequences
+|  |
+| ------- |
+| [1021-remove-outermost-parentheses](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/1021-remove-outermost-parentheses) |
 <!---LeetCode Topics End-->
 
