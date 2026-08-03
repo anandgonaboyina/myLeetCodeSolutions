@@ -1,4 +1,4 @@
-//my brute force solution
+//my brute force solution got 100% beats
 class Solution {
 public:
     string removeOuterParentheses(string s) 
