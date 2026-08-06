@@ -1,4 +1,5 @@
-//my brute force solution
+//my brute force solution got 100% beats
+// this is the optimal solutin of TC N
 class Solution {
 public:
     bool isAnagram(string s, string t) {
@@ -13,9 +14,9 @@ public:
         {
             hashArr2[t[i]-97]++;
         }
-        for(int i=0; i<s.size(); i++)
+        for(int i=0; i<26; i++)
         {
-           if( hashArr1[s[i]-97] != hashArr2[s[i]-97] )
+           if( hashArr1[i] != hashArr2[i] )
             return false;
         }
         return true;
