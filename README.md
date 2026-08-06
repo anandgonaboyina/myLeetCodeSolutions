@@ -8,6 +8,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0069-sqrtx](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0069-sqrtx) |
 | [0189-rotate-array](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0189-rotate-array) |
 | [0268-missing-number](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0268-missing-number) |
+| [1903-largest-odd-number-in-string](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/1903-largest-odd-number-in-string) |
 ## Array
 |  |
 | ------- |
@@ -137,6 +138,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0014-longest-common-prefix](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0014-longest-common-prefix) |
 | [0151-reverse-words-in-a-string](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0151-reverse-words-in-a-string) |
 | [1021-remove-outermost-parentheses](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/1021-remove-outermost-parentheses) |
+| [1903-largest-odd-number-in-string](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/1903-largest-odd-number-in-string) |
 ## Trie
 |  |
 | ------- |
@@ -206,6 +208,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0410-split-array-largest-sum](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/0410-split-array-largest-sum) |
+| [1903-largest-odd-number-in-string](https://github.com/anandgonaboyina/myLeetCodeSolutions/tree/master/1903-largest-odd-number-in-string) |
 ## Stack
 |  |
 | ------- |
