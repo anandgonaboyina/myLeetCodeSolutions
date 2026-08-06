@@ -1,4 +1,4 @@
-//brute force solution  got 48 beats only as Sc is 2*N
+//brute force solution  got 100 beats though SC is 2*N
 class Solution {
 public:
     bool isIsomorphic(string s, string t) {
