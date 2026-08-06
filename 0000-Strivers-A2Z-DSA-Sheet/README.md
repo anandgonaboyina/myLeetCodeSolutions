@@ -91,3 +91,4 @@
 | [Find row with maximum 1's](Find-row-with-maximum-1-s) | [.cpp](Find-row-with-maximum-1-s/solution.cpp) |
 | [Find Peak Element - II](Find-Peak-Element-II) | [.cpp](Find-Peak-Element-II/solution.cpp) |
 | [Remove Outermost Parentheses](Remove-Outermost-Parentheses) | [.cpp](Remove-Outermost-Parentheses/solution.cpp) |
+| [Reverse every word in a string](Reverse-every-word-in-a-string) | [.cpp](Reverse-every-word-in-a-string/solution.cpp) |
