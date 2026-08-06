@@ -33,3 +33,11 @@ public:
         return false;
     }
 };
+/*
+Remember the s + s hint?
+If s = "abcde", then s + s = "abcdeabcde".
+Every single valid rotation of s is now sitting perfectly inside that doubled string.
+
+Instead of rotating anything, we just glue s to itself and ask C++: "Is the goal hiding somewhere inside this new string?"
+if it there then .fine() will point to index may be not sure check once but if not it gives -1;
+*/
