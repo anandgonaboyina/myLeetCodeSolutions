@@ -1,3 +1,4 @@
+//my optimal solution come from brute solution
 class Solution {
 public:
     string longestCommonPrefix(vector<string>& strs) {
@@ -15,9 +16,8 @@ public:
     }
 };
 
-
-
-//my brute force solution Tc is N^2
+// its optimal solution
+//my brute force solution Tc is N^2 as i blindly used the string s : strs it copies each strs so makes take much time
 /*
 class Solution {
 public:
