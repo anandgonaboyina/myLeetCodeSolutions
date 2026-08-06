@@ -95,3 +95,4 @@
 | [Largest Odd Number in a String](Largest-Odd-Number-in-a-String) | [.cpp](Largest-Odd-Number-in-a-String/solution.cpp) |
 | [Longest Common Prefix](Longest-Common-Prefix) | [.cpp](Longest-Common-Prefix/solution.cpp) |
 | [Isomorphic String](Isomorphic-String) | [.cpp](Isomorphic-String/solution.cpp) |
+| [Rotate String](Rotate-String) | [.cpp](Rotate-String/solution.cpp) |
