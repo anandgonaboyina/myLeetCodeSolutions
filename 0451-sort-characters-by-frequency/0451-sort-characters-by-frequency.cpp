@@ -1,4 +1,5 @@
-//my brute solution 
+//my brute solution got 100% beats Tc is NlogN and 
+// space Complexity 1 as for ans return we dont count and fixed array size has taken
 class Solution {
 public:
     string frequencySort(string s) {
@@ -10,10 +11,12 @@ public:
             hashArr[ch] = {++hashArr[ch].first, ch};
         }
         sort(hashArr.begin(), hashArr.end());
-        for(int i = 122; i>=48; i--)    // chars and digits are from 48 and 65 to 122
+        for(int i = 122; i>=0; i--)    
         {
-            if(hashArr[i].first !=0)
-                for(int j=0; j<hashArr[i].first; j++)
+            if(hashArr[i].first == 0)  
+             // as sorted all are 0's  from first 0 from right are no chars or digits so stopped here
+                break;
+            for(int j=0; j<hashArr[i].first; j++)
                     ans += hashArr[i].second;
         }
         return ans;
