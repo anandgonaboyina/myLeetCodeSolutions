@@ -12,9 +12,7 @@ public:
                     maxCnt = max(maxCnt, cnt);
                 }
             else if (ch == ')')
-                {
                     cnt--;
-                }
         }
         return maxCnt;
     }
