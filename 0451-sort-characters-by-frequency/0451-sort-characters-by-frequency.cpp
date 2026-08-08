@@ -16,8 +16,12 @@ public:
             if(hashArr[i].first == 0)
                 break;
              // as sorted all are 0's  from first 0 from right are no chars or digits so stopped here
-            for(int j=0; j<hashArr[i].first; j++)
+           /*  for(int j=0; j<hashArr[i].first; j++)
                     ans += hashArr[i].second;
+            */
+                    // insted lead using the append method better as loop relocates the memory that many time
+                    //but append will relocate at once with that many times you want to add
+            ans.append(hashArr[i].first, hashArr[i].second);
         }
         return ans;
     }
