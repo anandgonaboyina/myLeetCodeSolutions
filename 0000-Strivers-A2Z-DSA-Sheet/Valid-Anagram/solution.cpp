@@ -1,61 +1,52 @@
-//leetcode problem : 1901: Find a Peak Element II
-//my brute force solution got 100% beats though it not a binary solution
-//TC is M*N 
-//by finding the first max element index in a row so left and right will garuntee smaller than it
-//later checking the up and down elements with border checking first so we eleminate outer bounder cross
+
+//brute force by comparing the each char after sorting both strings Tc is NlogN and Sc is 1 as sorting takes in element in place
 /*
 class Solution {
 public:
-    vector<int> findPeakGrid(vector<vector<int>>& mat) 
-    {
-        int m = mat.size();
-        int n=mat[0].size();
-        for(int i=0; i<m; i++)
-            {
-                int peak = 0;
-                for(int j=0; j<n; j++)
-                    {
-                        peak = mat[i][peak]>mat[i][j]? peak: j;
-                    };
-                if( (i==m-1 || mat[i][peak]>mat[i+1][peak] ) && (i==0 || mat[i][peak] > mat[i-1][peak]))
-                    return {i, peak};
-            }
-                return {-1, -1};
-            
+    bool anagramStrings(string s, string t) {
+        int n = s.size(), m = t.size();
+        if(n !=m) return false;
+        sort(s.begin(), s.end());
+        sort(t.begin(), t.end());
+        for(int i=0; i<n; i++)
+            if(s[i] != t[i])
+                return false;
+        return true;
     }
 };
-
 */
-//optimal solution with TC as MlogN
+//my brute force solution got 100% beats as this is Optimal solution
+// this is the optimal solutin of TC N and SC is 1 as fixed sized arrays are using irespective of size of string
 
-// by first going to middle column and there row wise search for maxRow in that as it was already max in Column
-// so need to check left and right to decide the peak
-// decide which side will have max then increment left or dicrement right with mid reference by checking the boundary
 class Solution {
 public:
-    vector<int> findPeakGrid(vector<vector<int>>& mat) 
-    {
-        int m = mat.size();
-        int n = mat[0].size();
-        int left=0, right = n-1;
-        while(left<=right)
+    bool anagramStrings(string s, string t) {
+        if(s.size() != t.size())
+            return false;
+        vector<int> hashArr1(26, 0), hashArr2(26, 0);
+        for(int i=0; i<s.size(); i++)
         {
-            int mid = left + (right-left)/2;
-            int maxRow = 0;
-            for(int i=0; i<m; i++)
-            {
-                maxRow = mat[maxRow][mid] > mat[i][mid] ? maxRow : i;
-            }
-            int leftNum = (mid > 0)? mat[maxRow][mid-1] : -1;
-            int rightNum = (mid < n-1)? mat[maxRow][mid+1]: -1;
-            if(mat[maxRow][mid]>leftNum && mat[maxRow][mid]>rightNum)
-                return {maxRow, mid};
-            else if(mat[maxRow][mid] < leftNum)
-                right = mid-1;
-            else
-                left = mid+1;
+            hashArr1[s[i]-97]++;
         }
-        return {-1, -1};
+        for(int i=0; i<s.size(); i++)
+        {
+            hashArr2[t[i]-97]++;
+        }
+        // dont do this as we just have to check the array size of 26 only that too frequency 
+        // so count only no need to go for whole the length of the string and repeat the same comparasion
+        // for(int i=0; i<s.size(); i++)
+        // {
+        //    if( hashArr1[s[i]-97] != hashArr2[s[i]-97] )
+        //     return false;
+        // }
+        // better is below
+        
+        for(int i=0; i<26; i++)
+        {
+           if( hashArr1[i] != hashArr2[i] )
+            return false;
+        }
+        return true;
     }
 };
 
