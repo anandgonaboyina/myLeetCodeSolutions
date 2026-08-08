@@ -1,5 +1,6 @@
 
 //brute force by comparing the each char after sorting both strings Tc is NlogN and Sc is 1 as sorting takes in element in place
+/*
 class Solution {
 public:
     bool isAnagram(string s, string t) {
@@ -13,13 +14,10 @@ public:
         return true;
     }
 };
-
-
-
-
-//my brute force solution got 100% beats
+*/
+//my brute force solution got 100% beats as this is Optimal solution
 // this is the optimal solutin of TC N and SC is 1 as fixed sized arrays are using irespective of size of string
-/*
+
 class Solution {
 public:
     bool isAnagram(string s, string t) {
@@ -52,4 +50,3 @@ public:
     }
 };
 
-*/
