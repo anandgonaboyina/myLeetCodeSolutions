@@ -23,6 +23,7 @@ public:
        return 0;
     }
     int romanToInt(string s) {
+        /*
         int ans=0;
         int n1=0, n2=0;
         for(int i=0; i<s.size(); i++)
@@ -41,11 +42,12 @@ public:
             ans += n1;
         }
             return ans;
+
+            */
 // Better way to write above logic in clean and short
         ///    SIMPLY WE CAN WRITE CODE AS WE JUST HAVE TO REMOVE THE SMALLER VALUE FROM BIGGER MEANS THOSE ARE AT I IF LESS THAN I+1 REMOVE FROM ANS AND THEN NEXT I+1 WILL GET ADD TO ANS
-        /*
 
-        int ans = "";
+        int ans = 0;
         for(int i=0; i<s.size(); i++)
             if(i<s.size()-1 && findIntEqualant(s[i]) < findIntEqualant(s[i+1]))
                 ans -= findIntEqualant(s[i]);
@@ -53,7 +55,7 @@ public:
                 ans += findIntEqualant(s[i]);
         return ans;
 
-        */
+
 
     }
 };
