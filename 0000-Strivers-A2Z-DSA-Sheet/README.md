@@ -98,3 +98,4 @@
 | [Rotate String](Rotate-String) | [.cpp](Rotate-String/solution.cpp) |
 | [Valid Anagram](Valid-Anagram) | [.cpp](Valid-Anagram/solution.cpp) |
 | [Sort Characters by Frequency](Sort-Characters-by-Frequency) | [.cpp](Sort-Characters-by-Frequency/solution.cpp) |
+| [Maximum Nesting Depth of the Parentheses](Maximum-Nesting-Depth-of-the-Parentheses) | [.cpp](Maximum-Nesting-Depth-of-the-Parentheses/solution.cpp) |
