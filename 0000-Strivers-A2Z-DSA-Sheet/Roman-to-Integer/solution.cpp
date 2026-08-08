@@ -1,4 +1,4 @@
-// premium leetcode problem : (medium level)
+// leetcode problem : 
 //my brute force solution
 class Solution {
 public:
