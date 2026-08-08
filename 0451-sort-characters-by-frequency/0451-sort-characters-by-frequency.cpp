@@ -13,9 +13,9 @@ public:
         sort(hashArr.begin(), hashArr.end());
         for(int i = 122; i>=0; i--)    
         {
-            if(hashArr[i].first == 0)  
-             // as sorted all are 0's  from first 0 from right are no chars or digits so stopped here
+            if(hashArr[i].first == 0)
                 break;
+             // as sorted all are 0's  from first 0 from right are no chars or digits so stopped here
             for(int j=0; j<hashArr[i].first; j++)
                     ans += hashArr[i].second;
         }
