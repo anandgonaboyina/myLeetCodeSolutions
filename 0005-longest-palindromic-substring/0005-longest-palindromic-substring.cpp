@@ -34,7 +34,6 @@ public:
 
 
 // Optimal solution 
-
 class Solution {
 public:
     string longestPalindrome(string s) {
