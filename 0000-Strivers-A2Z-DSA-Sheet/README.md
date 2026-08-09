@@ -102,3 +102,4 @@
 | [Roman to Integer](Roman-to-Integer) | [.cpp](Roman-to-Integer/solution.cpp) |
 | [String to Integer (atoi)](String-to-Integer-atoi) | [.cpp](String-to-Integer-atoi/solution.cpp) |
 | [Longest Palindromic Substring](Longest-Palindromic-Substring) | [.cpp](Longest-Palindromic-Substring/solution.cpp) |
+| [Sum of Beauty of All Substrings](Sum-of-Beauty-of-All-Substrings) | [.cpp](Sum-of-Beauty-of-All-Substrings/solution.cpp) |
