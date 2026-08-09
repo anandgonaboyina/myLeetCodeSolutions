@@ -33,7 +33,7 @@ public:
 */
 
 
-// Optimal solution 
+// Optimal solution got 80% beats
 class Solution {
 public:
     string longestPalindrome(string s) {
@@ -70,3 +70,6 @@ public:
     return ans;
     }
 };
+/*
+
+*/
