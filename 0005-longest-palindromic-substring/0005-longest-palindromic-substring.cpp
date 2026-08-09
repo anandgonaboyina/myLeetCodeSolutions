@@ -28,7 +28,7 @@ public:
 */
 
 
-// Optimal solution getting < 80% beats
+// Optimal solution getting 100% beats
 class Solution {
 public:
     string longestPalindrome(string s) {
