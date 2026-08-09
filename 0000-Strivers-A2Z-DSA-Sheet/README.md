@@ -101,3 +101,4 @@
 | [Maximum Nesting Depth of the Parentheses](Maximum-Nesting-Depth-of-the-Parentheses) | [.cpp](Maximum-Nesting-Depth-of-the-Parentheses/solution.cpp) |
 | [Roman to Integer](Roman-to-Integer) | [.cpp](Roman-to-Integer/solution.cpp) |
 | [String to Integer (atoi)](String-to-Integer-atoi) | [.cpp](String-to-Integer-atoi/solution.cpp) |
+| [Longest Palindromic Substring](Longest-Palindromic-Substring) | [.cpp](Longest-Palindromic-Substring/solution.cpp) |
