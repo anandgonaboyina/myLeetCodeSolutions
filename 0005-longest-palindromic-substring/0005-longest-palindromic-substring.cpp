@@ -39,26 +39,35 @@ class Solution {
 public:
     string longestPalindrome(string s) {
         int n = s.size();
-        string maxPal = "";
+        int maxLength = 0;
+        int startInd = 0;
+        string ans ="";
         for(int i=0; i<n; i++)
         {
             int left = i, right = i;
             while(left >=0 && right < n && s[left] == s[right])
             {
-                int palSize = right-left+1;
-                if(maxPal.size() < palSize)
-                    maxPal = s.substr(left, palSize);
+                if(maxLength < (right-left+1))
+                    {   
+                        startInd = left;
+                        maxLength = (right-left+1);
+                    }
                 left--; right++;
             }
+            
             left = i; right = i+1;
-            while(left >=0 && right < n && s[left] == s[right])
-            {
-                int palSize = right-left+1;
-                if(maxPal.size() < palSize)
-                    maxPal = s.substr(left, palSize);
-                left--; right++;
-            }
+                while(left >=0 && right < n && s[left] == s[right])
+                {
+                    if(maxLength < (right-left+1))
+                        {   
+                            startInd = left;
+                            maxLength = (right-left+1);
+                        }
+                    left--; right++;
+                }
+            
         }
-    return maxPal;
+        ans  = s.substr(startInd, maxLength);
+    return ans;
     }
 };
