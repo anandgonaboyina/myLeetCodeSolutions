@@ -39,9 +39,11 @@ public:
         for(int i=0; i<n; i++)
         {
             int left = i, right = i;
+            // by skipping the duplicates we can get 100% beats by using below  while loop and making i = right and no need the second while loop to check i+1
             while(right<n && s[right] == s[right+1])
                 right++;
             i = right;
+
             while(left >=0 && right < n && s[left] == s[right])
             {
                 if(maxLength < (right-left+1))
@@ -51,18 +53,7 @@ public:
                     }
                 left--; right++;
             }
-            
-            left = i; right = i+1;
-                while(left >=0 && right < n && s[left] == s[right])
-                {
-                    if(maxLength < (right-left+1))
-                        {   
-                            startInd = left;
-                            maxLength = (right-left+1);
-                        }
-                    left--; right++;
-                }
-            
+  
         }
         ans  = s.substr(startInd, maxLength);
     return ans;
@@ -112,4 +103,16 @@ While Loop 1: Starts with left = i, right = i (expands while s[left] == s[right]
 
 While Loop 2: Starts with left = i, right = i + 1 (expands while s[left] == s[right]).
 
+============================================
+(with the duplicate skip):
+=============================================
+You are at index 1. left=1, right=1.
+
+Your duplicate skip kicks in: "Wait, the next letter is also 'b'. Let me grab it."
+
+It pushes right to 2.
+
+Now, before the outward expansion even starts, your center is already left=1, right=2.
+
+The duplicate skip automatically built the even-length center for you.
 */
