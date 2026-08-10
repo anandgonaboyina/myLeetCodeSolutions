@@ -1,6 +1,7 @@
 /*
 Definition of singly linked list:
 class ListNode{
+  
   public:
     int data;
     ListNode *next;
@@ -9,12 +10,36 @@ class ListNode{
     ListNode(int x, ListNode *next) : data(x), next(next) {}
 };
 */
-
 class Solution {
-    public:
-        ListNode* insertAtHead(ListNode* &head, int X) {
-            ListNode* newHead = new ListNode(X, head);
-            head = newHead;
-            return newHead;
-        }
+public:
+    ListNode* deleteHead(ListNode* &head) {
+        if(head == nullptr)
+            return nullptr;
+        ListNode* temp = head;
+        head = head->next;
+        delete temp;
+        return head;
+    }
 };
+
+/*
+doubley linkedlist with prev and next as node pointers
+class Solution {
+public:
+    ListNode* deleteHead(ListNode* &head) {
+        if(head == nullptr)
+            return nullptr;
+        ListNode* temp = head;
+        head = head->next;
+
+// # here we have to check if only one node there head is pointing to nullptr
+// # so head->prev is going to give segmentation error
+
+        if(head != nullptr)           
+        head->prev = nullptr;
+        delete temp;
+        return head;
+    }
+};
+
+*/
