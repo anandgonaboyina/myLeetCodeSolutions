@@ -41,5 +41,21 @@ public:
         return head;
     }
 };
+*/
 
+// clean code 
+/*
+
+class Solution {
+public:
+    ListNode *deleteHead(ListNode *&head) {
+        if(!head) return nullptr;
+        ListNode* temp = head;
+        head = head->next;
+        if(head)
+            head->prev = nullptr;
+        delete temp;
+        return head;
+    }
+};
 */
