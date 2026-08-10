@@ -106,3 +106,4 @@
 | [Insertion at the head of Linked List](Insertion-at-the-head-of-Linked-List) | [.cpp](Insertion-at-the-head-of-Linked-List/solution.cpp) |
 | [Deletion of the head of LL](Deletion-of-the-head-of-LL) | [.cpp](Deletion-of-the-head-of-LL/solution.cpp) |
 | [Find the length of the Linked List](Find-the-length-of-the-Linked-List) | [.cpp](Find-the-length-of-the-Linked-List/solution.cpp) |
+| [Search in Linked List](Search-in-Linked-List) | [.cpp](Search-in-Linked-List/solution.cpp) |
