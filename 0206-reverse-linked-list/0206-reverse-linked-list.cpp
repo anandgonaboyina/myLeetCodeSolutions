@@ -9,6 +9,9 @@
  * };
  */
  //my brute force solution got 100% beats after spending 1hr
+ // this is the optimal solution TC is N and SC is 1
+ //iterative solution
+ /* 
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
@@ -25,3 +28,18 @@ public:
         return prev;
     }
 };
+
+*/
+
+// recursive solution
+class Solution {
+public:
+    ListNode* reverseList(ListNode* head) {
+        if(!head || !head->next) return head;
+            ListNode* newHead = reverseList(head->next);
+            head->next->next = head;
+            head->next =nullptr;
+        return newHead;
+    }
+};
+
