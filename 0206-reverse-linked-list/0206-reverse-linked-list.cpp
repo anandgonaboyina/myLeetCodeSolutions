@@ -8,14 +8,13 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
- //my brute force solution
+ //my brute force solution got 100% beats after spending 1hr
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
         if(!head || !head->next) return head;
-        ListNode* prev = head;
-        ListNode* curr = head->next;
-        head->next = nullptr;
+        ListNode* prev = nullptr;
+        ListNode* curr = head;
         while(curr)
         {
             ListNode* nxt = curr->next;
