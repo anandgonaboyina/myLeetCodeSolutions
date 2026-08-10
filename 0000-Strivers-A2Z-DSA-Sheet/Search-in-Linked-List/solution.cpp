@@ -5,7 +5,7 @@
 class Solution {
 public:
 };
-*/
+*/ 
         delete next;
     }
     ListNode* next;
