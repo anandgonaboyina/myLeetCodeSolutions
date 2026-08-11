@@ -1,78 +1,88 @@
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode(int x) : val(x), next(NULL) {}
- * };
- */
-
-//my brute force solution TC is N and SC is N so getting 8% beats
 /*
-class Solution{
-    public:
-    bool hasCycle(ListNode* head)
+Definition of singly linked list:
+struct ListNode
+{
+    int val;
+    ListNode *next;
+    ListNode()
     {
-        if(!head || !head->next) return false;
-        unordered_set<ListNode*> pointers;
-        ListNode* ptr= head;
+        val = 0;
+        next = NULL;
+    }
+    ListNode(int data1)
+    {
+        val = data1;
+        next = NULL;
+    }
+    ListNode(int data1, ListNode *next1)
+    {
+        val = data1;
+        next = next1;
+    }
+};
+*/
+// my brute force solution Tc is N and Sc is N
+/*
+class Solution {
+public:
+    int findLengthOfLoop(ListNode *head) {
+        if(!head || !head->next) return 0;
+        unordered_set<ListNode*> nodes;
+        ListNode* cycleEnd = nullptr;
+        ListNode* ptr = head;
+        int ans =0;
         while(ptr)
         {
-            if(pointers.contains(ptr))
-                return true;
-            pointers.insert(ptr);
+            if(nodes.contains(ptr->next))
+            {
+                cycleEnd = ptr;
+                ptr = ptr->next;  //cycle starting node
+                break;
+            }
+            nodes.insert(ptr);
             ptr = ptr->next;
         }
-        return false;
+        if(cycleEnd)
+        {        
+            while(ptr != cycleEnd)
+                {
+                    ans++;
+                    ptr = ptr->next;
+                }
+            return ans+1;
+        }
+        return ans;
     }
 };
 */
-
- // optimal solution obtained from logic of Tortoise and Hare pattern
- // got 97 % beats TC is N and SC is 1
- 
-class Solution {
-public:
-    bool hasCycle(ListNode *head) {
-        if(!head || !head->next)
-            return false;
+//optimal solution using the Tortoise and Hare
+// Tc is N and SC is 1
+class Solution{
+    public:
+    int findLengthOfLoop(ListNode *head)
+    {
+        if(!head || !head->next) return 0;
         ListNode* slow = head;
         ListNode* fast = head;
+        int ans=0;
         while(fast && fast->next)
-           {
+        {
+            slow = slow->next;
+            fast = fast->next->next;
+            if(slow == fast)   
+                break;
+            // or if(fast && fast->next) break; this will also work if loop there
+        }
+        if(slow == fast)
+        {
+            slow = slow->next;  // points to starting of the loop
+            while(slow != fast)
+            {
+                ans++;
                 slow = slow->next;
-                fast = fast->next->next;
-                if(slow  == fast)
-                       return true;
-           }
-
-        return false;
+            }
+            return ans+1;
+        }
+        return ans;
     }
 };
-
-
- //my brute force 2 discarded approach because it wont work as it goes to inifinite loop if loop there
-// waste of time 
-/*
-class Solution {
-public:
-    bool hasCycle(ListNode *head) {
-        if(!head || !head->next)
-            return false;
-        ListNode* ptr1 = head;
-        ListNode* ptr2 = nullptr;
-        while(ptr1)
-           {
-                ptr2 = ptr1;
-                while(ptr2)
-                {
-                    if(ptr2 == ptr1)
-                        return true;
-                    ptr2 = ptr2->next;
-                }
-            ptr1 = ptr1->next;
-           }
-        return false;
-    }
-};
-*/
