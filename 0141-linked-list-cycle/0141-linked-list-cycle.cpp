@@ -6,7 +6,8 @@
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
- // my brute force solution obtained from logic of Tortoise and Hare pattern
+ // optimal solution obtained from logic of Tortoise and Hare pattern
+ // got 81 beats TC is N and SC is 1
 class Solution {
 public:
     bool hasCycle(ListNode *head) {
@@ -28,7 +29,7 @@ public:
 
 
 
- //discarded approach
+ //my brute force discarded approach
 // class Solution {
 // public:
 //     bool hasCycle(ListNode *head) {
