@@ -8,12 +8,12 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+
  //my brute force solution TC is N and Sc is N  memory limit exceed after 75/93 tests passed
  // this solution is not preferred though logic is fine 
- 
+
 //  Casting (char)ptr->val is very dangerous in C++. If ptr->val is 10, casting it to a char turns it into a newline character (\n). 
 //  If it is 0, it becomes the null terminator (\0)
- 
  /*
 class Solution {
 public:
@@ -36,7 +36,7 @@ public:
 };
 */
 
-//optimal solution
+//my brute force solution implementing using the vector
 class Solution{
 public:
     bool isPalindrome(ListNode* head) {
