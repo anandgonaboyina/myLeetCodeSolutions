@@ -112,3 +112,4 @@
 | [Reverse a Doubly Linked List](Reverse-a-Doubly-Linked-List) | [.cpp](Reverse-a-Doubly-Linked-List/solution.cpp) |
 | [Find Middle of Linked List](Find-Middle-of-Linked-List) | [.cpp](Find-Middle-of-Linked-List/solution.cpp) |
 | [Reverse a LL](Reverse-a-LL) | [.cpp](Reverse-a-LL/solution.cpp) |
+| [Detect a loop in LL](Detect-a-loop-in-LL) | [.cpp](Detect-a-loop-in-LL/solution.cpp) |
