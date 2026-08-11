@@ -29,7 +29,7 @@ class Solution{
 */
 
  // optimal solution obtained from logic of Tortoise and Hare pattern
- // got 81% beats TC is N and SC is 1
+ // got 97 % beats TC is N and SC is 1
  
 class Solution {
 public:
