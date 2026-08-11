@@ -111,3 +111,4 @@
 | [Delete head of Doubly Linked List](Delete-head-of-Doubly-Linked-List) | [.cpp](Delete-head-of-Doubly-Linked-List/solution.cpp) |
 | [Reverse a Doubly Linked List](Reverse-a-Doubly-Linked-List) | [.cpp](Reverse-a-Doubly-Linked-List/solution.cpp) |
 | [Find Middle of Linked List](Find-Middle-of-Linked-List) | [.cpp](Find-Middle-of-Linked-List/solution.cpp) |
+| [Reverse a LL](Reverse-a-LL) | [.cpp](Reverse-a-LL/solution.cpp) |
