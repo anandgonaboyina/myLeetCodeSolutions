@@ -7,7 +7,7 @@
  * };
  */
 
-//brute force approach TC is N and SC is N
+//brute force approach TC is N and SC is N got 49% beats
 class Solution{
     public:
     ListNode* detectCycle(ListNode* head)
