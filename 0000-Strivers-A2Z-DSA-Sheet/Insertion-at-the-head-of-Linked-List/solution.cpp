@@ -11,10 +11,10 @@ class ListNode{
 */
 
 class Solution {
+    ListNode* insert
     public:
         ListNode* insertAtHead(ListNode* &head, int X) {
             ListNode* newHead = new ListNode(X, head);
-            head = newHead;
             return newHead;
         }
 };
