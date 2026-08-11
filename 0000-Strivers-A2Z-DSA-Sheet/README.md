@@ -115,3 +115,4 @@
 | [Detect a loop in LL](Detect-a-loop-in-LL) | [.cpp](Detect-a-loop-in-LL/solution.cpp) |
 | [Find the starting point in LL](Find-the-starting-point-in-LL) | [.cpp](Find-the-starting-point-in-LL/solution.cpp) |
 | [Length of loop in LL](Length-of-loop-in-LL) | [.cpp](Length-of-loop-in-LL/solution.cpp) |
+| [Check if LL is palindrome or not](Check-if-LL-is-palindrome-or-not) | [.cpp](Check-if-LL-is-palindrome-or-not/solution.cpp) |
