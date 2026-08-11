@@ -7,7 +7,7 @@
  * };
  */
 
-//my brute force solution TC is 1 but SC is N
+//my brute force solution TC is 1 but SC is N and getting 5% beats
 class Solution{
     public:
     bool hasCycle(ListNode* head)
