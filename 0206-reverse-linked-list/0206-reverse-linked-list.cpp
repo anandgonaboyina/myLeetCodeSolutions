@@ -11,7 +11,7 @@
  //my brute force solution got 100% beats after spending 1hr
  // this is the optimal solution TC is N and SC is 1
  //iterative solution
- /* 
+
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
@@ -20,18 +20,18 @@ public:
         ListNode* curr = head;
         while(curr)
         {
-            ListNode* nxt = curr->next;
+            ListNode* next = curr->next;
             curr->next = prev;
             prev = curr;
-            curr = nxt;
+            curr = next;
         }
         return prev;
     }
 };
 
-*/
 
 // recursive solution
+/*
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
@@ -42,4 +42,6 @@ public:
         return newHead;
     }
 };
+
+*/
 
