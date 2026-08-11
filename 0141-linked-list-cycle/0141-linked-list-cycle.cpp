@@ -6,8 +6,29 @@
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
+
+//my brute force solution TC is 1 but SC is N
+class Solution{
+    public:
+    bool hasCycle(ListNode* head)
+    {
+        if(!head || !head->next) return false;
+        unordered_set<ListNode*> pointers;
+        ListNode* ptr= head;
+        while(ptr)
+        {
+            if(pointers.contains(ptr))
+                return true;
+            pointers.insert(ptr);
+            ptr = ptr->next;
+        }
+        return false;
+    }
+};
+
  // optimal solution obtained from logic of Tortoise and Hare pattern
- // got 81 beats TC is N and SC is 1
+ // got 81% beats TC is N and SC is 1
+ /*
 class Solution {
 public:
     bool hasCycle(ListNode *head) {
@@ -26,20 +47,29 @@ public:
         return false;
     }
 };
+*/
 
-
-
- //my brute force discarded approach
-// class Solution {
-// public:
-//     bool hasCycle(ListNode *head) {
-//         if(!head || !head->next)
-//             return false;
-//         ListNode* ptr = head;
-//         ListNode* ptr2 = head;
-//         while(ptr->next)
-//            {
-//                 while(ptr->next)
-//            }
-//     }
-// };
+ //my brute force 2 discarded approach as it may get TLE as TC is N^2
+ /*
+class Solution {
+public:
+    bool hasCycle(ListNode *head) {
+        if(!head || !head->next)
+            return false;
+        ListNode* ptr1 = head;
+        ListNode* ptr2 = nullptr;
+        while(ptr1)
+           {
+                ptr2 = ptr1;
+                while(ptr2)
+                {
+                    ptr2 = ptr2->next;
+                    if(ptr2 == ptr1)
+                        return true;
+                }
+            ptr1 = ptr1->next;
+           }
+        return false;
+    }
+};
+*/
