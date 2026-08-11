@@ -7,7 +7,8 @@
  * };
  */
 
-//my brute force solution TC is 1 but SC is N and getting 5% beats
+//my brute force solution TC is N and SC is N so getting 8% beats
+/*
 class Solution{
     public:
     bool hasCycle(ListNode* head)
@@ -25,10 +26,11 @@ class Solution{
         return false;
     }
 };
+*/
 
  // optimal solution obtained from logic of Tortoise and Hare pattern
  // got 81% beats TC is N and SC is 1
- /*
+ 
 class Solution {
 public:
     bool hasCycle(ListNode *head) {
@@ -47,10 +49,11 @@ public:
         return false;
     }
 };
-*/
 
- //my brute force 2 discarded approach as it may get TLE as TC is N^2
- /*
+
+ //my brute force 2 discarded approach because it wont work as it goes to inifinite loop if loop there
+// waste of time 
+/*
 class Solution {
 public:
     bool hasCycle(ListNode *head) {
@@ -63,9 +66,9 @@ public:
                 ptr2 = ptr1;
                 while(ptr2)
                 {
-                    ptr2 = ptr2->next;
                     if(ptr2 == ptr1)
                         return true;
+                    ptr2 = ptr2->next;
                 }
             ptr1 = ptr1->next;
            }
