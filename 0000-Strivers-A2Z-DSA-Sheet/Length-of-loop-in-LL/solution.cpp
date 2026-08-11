@@ -3,55 +3,76 @@
  * struct ListNode {
  *     int val;
  *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) {}
- *     ListNode(int x) : val(x), next(nullptr) {}
- *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
- //my brute force solution got 100% beats TC is N and SC is 1
- /*
-class Solution {
-public:
-    ListNode* middleOfLinkedList(ListNode* head) {
-        if(!head || !head->next) return head;
-        ListNode* ptr = head;
-        int cnt =0;
+
+//my brute force solution TC is N and SC is N so getting 8% beats
+/*
+class Solution{
+    public:
+    bool hasCycle(ListNode* head)
+    {
+        if(!head || !head->next) return false;
+        unordered_set<ListNode*> pointers;
+        ListNode* ptr= head;
         while(ptr)
         {
-            cnt++;
+            if(pointers.contains(ptr))
+                return true;
+            pointers.insert(ptr);
             ptr = ptr->next;
         }
-        ptr = head;
-        for(int i=0; i<cnt/2; i++)
-        {
-            ptr = ptr->next;
-        }
-        return ptr;
+        return false;
     }
 };
 */
-/*
-an interview, the immediate follow-up question will be: "Can you find the middle in exactly one pass instead of one and a half?"
-To do this, you use the Tortoise and Hare (Slow and Fast Pointers) technique.
-## The Hint:  ##
-Create two pointers: slow and fast. Start both at head.
-Run a while loop.
-Move fast forward by two steps (fast = fast->next->next).
-Move slow forward by one step (slow = slow->next).
-Because the fast pointer travels exactly twice as fast, by the time it hits the end of the list (nullptr), the slow pointer will be trapped exactly in the middle.
-*/
-// TC is N in one pass and SC is 1
+
+ // optimal solution obtained from logic of Tortoise and Hare pattern
+ // got 97 % beats TC is N and SC is 1
+ 
 class Solution {
 public:
-    ListNode* middleOfLinkedList(ListNode* head) {
-        if(!head || !head->next) return head;
+    bool hasCycle(ListNode *head) {
+        if(!head || !head->next)
+            return false;
         ListNode* slow = head;
         ListNode* fast = head;
         while(fast && fast->next)
-        {
-            slow = slow->next;
-            fast = fast->next->next;
-        }
-        return slow;
+           {
+                slow = slow->next;
+                fast = fast->next->next;
+                if(slow  == fast)
+                       return true;
+           }
+
+        return false;
     }
 };
+
+
+ //my brute force 2 discarded approach because it wont work as it goes to inifinite loop if loop there
+// waste of time 
+/*
+class Solution {
+public:
+    bool hasCycle(ListNode *head) {
+        if(!head || !head->next)
+            return false;
+        ListNode* ptr1 = head;
+        ListNode* ptr2 = nullptr;
+        while(ptr1)
+           {
+                ptr2 = ptr1;
+                while(ptr2)
+                {
+                    if(ptr2 == ptr1)
+                        return true;
+                    ptr2 = ptr2->next;
+                }
+            ptr1 = ptr1->next;
+           }
+        return false;
+    }
+};
+*/
