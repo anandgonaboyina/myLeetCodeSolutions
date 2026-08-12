@@ -62,6 +62,7 @@ public:
 
 //optimal solution for Sc to 1  // need to complete this follow up Qn
 // using the Tortoise and Hare i find middle and then reverse the last half of LL and compare from last and first
+// got 100% beats as TC is N and SC is 1
 class Solution{
 public:
     ListNode* reverseLL(ListNode* head)
