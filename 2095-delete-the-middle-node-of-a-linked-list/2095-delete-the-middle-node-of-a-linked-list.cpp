@@ -9,7 +9,7 @@
  * };
  */
  //my brute force solution got 50% beats TC is N and Sc is 1
- /*
+// got 
 class Solution {
 public:
     ListNode* deleteMiddle(ListNode* head) {
@@ -32,8 +32,9 @@ public:
         return head;
     }
 };
-*/
-//optimal solution got 
+
+//optimal solution got 100% beats
+/*
 class Solution {
 public:
     ListNode* deleteMiddle(ListNode* head) {
@@ -51,3 +52,4 @@ public:
         return head;
     }
 };
+*/
