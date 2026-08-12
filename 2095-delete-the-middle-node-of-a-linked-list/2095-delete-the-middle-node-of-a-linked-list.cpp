@@ -8,7 +8,8 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
- //my optimal solution 
+ //my brute force solution got 50% beats TC is N and Sc is 1
+ /*
 class Solution {
 public:
     ListNode* deleteMiddle(ListNode* head) {
@@ -27,6 +28,25 @@ public:
         }
         ListNode* temp = ptr->next;
         ptr->next = temp->next;
+        delete temp;
+        return head;
+    }
+};
+*/
+//optimal solution
+class Solution {
+public:
+    ListNode* deleteMiddle(ListNode* head) {
+        if(!head || !head->next) return nullptr;
+        ListNode* slow = head;
+        ListNode* fast = head->next->next;  // so now the slow will sit exactly before the middle element
+        while(fast && fast->next)
+        {
+            fast = fast->next->next;
+            slow = slow->next;
+        }
+        ListNode* temp = slow->next;
+        slow->next = temp->next;
         delete temp;
         return head;
     }
