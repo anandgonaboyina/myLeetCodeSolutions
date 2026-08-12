@@ -10,7 +10,7 @@
  */
 
  //optimal solution beats 100%  TC is N and SC is 1
-  //working logic is linking the odd and even nodes and attaching the first evenhead node to last odd->next
+  //working logic is linking the odd and even nodes separately and attaching the first evenhead node to last odd->next of the odd linked nodes
 class Solution {
 public:
     ListNode* oddEvenList(ListNode* head) {
