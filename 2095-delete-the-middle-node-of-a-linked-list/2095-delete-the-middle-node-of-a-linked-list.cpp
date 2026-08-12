@@ -33,7 +33,7 @@ public:
     }
 };
 */
-//optimal solution
+//optimal solution got 
 class Solution {
 public:
     ListNode* deleteMiddle(ListNode* head) {
