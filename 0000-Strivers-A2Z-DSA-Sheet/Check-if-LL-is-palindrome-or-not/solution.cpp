@@ -1,96 +1,97 @@
 /*
-Definition of singly linked list:
-struct ListNode
-{
-    int val;
-    ListNode *next;
-    ListNode()
-    {
-        val = 0;
-        next = NULL;
-    }
-    ListNode(int data1)
-    {
-        val = data1;
-        next = NULL;
-    }
-    ListNode(int data1, ListNode *next1)
-    {
-        val = data1;
-        next = next1;
-    }
+class ListNode {
+public:
+    int data;
+    ListNode* prev;
+    ListNode* next;
+
+    ListNode(int val) : data(val), prev(nullptr), next(nullptr) {}
 };
 */
 
-//leetcode problem : 234 Palindrome Linked List
-//my brute force solution TC is N and Sc is N  memory limit exceed after 75/93 tests passed
- // this solution is not preferred though logic is fine 
 
-//  Casting (char)ptr->val is very dangerous in C++. If ptr->val is 10, casting it to a char turns it into a newline character (\n). 
-//  If it is 0, it becomes the null terminator (\0)
- /*
+/*
+## Note
+ Pointer Comparison
+we cannot use < or > to compare node pointers in a linked list. Linked list nodes are dynamically allocated in the heap, meaning they are scattered randomly in memory. right could actually have a lower memory address than left, causing your loop to run forever or access invalid memory.
+####################
+To stop the loop when pointers cross in a DLL, you must check for exact matches: 
+while (left != right && left->prev != right).
+*/
+//my brute force solution TC is N and SC is 1  but its not allowed a way to do
+//The Interview Trap:
+/*
+Swapping data inside nodes is generally considered a red flag in interviews. In real-world systems, the data payload of a node might be a massive object. Swapping heavy objects is incredibly slow. Instead, you are expected to leave the data alone and swap the pointers.
+*/
+/*
 class Solution {
 public:
-    bool isPalindrome(ListNode* head) {
-        if(!head || !head->next) return true;
-        ListNode* ptr = head;
-        string s ="";
-        while(ptr)
+    ListNode* reverseDLL(ListNode* head) {
+        if(!head || !head->next) return head;
+        ListNode* left = head;
+        ListNode* right = head;
+        while(right->next)
         {
-            s = s + (char)ptr->val;  // danger ahead
-            ptr = ptr->next;
+            right = right->next;
         }
-        for(int i=0; i<s.size()/2; i++)
-           { 
-            if(s[i] != s[s.size()-1-i])
-                return false;
-            }
-        return true;
+        while(left != right && left->prev != right)  // here not like left < right 
+        {
+            int temp = left->data;
+            left->data = right->data;
+            right->data = temp;
+            left = left->next;
+            right = right->prev;
+        }
+        return head;
     }
 };
 */
-
-//my brute force solution implementing using the vector got 58% beats
-//Tc is N and SC is N
+//swaping the pointers my apporach
 /*
 class Solution{
-public:
-    bool isPalindrome(ListNode* head) {
-        if(!head || !head->next) return true;
-        ListNode* ptr = head;
-        vector<int> nums;
-        while(ptr)
+    public:
+    ListNode* reverseDLL(ListNode* head)
+    {
+        if(!head || !head->prev) return head;
+        ListNode* left =head;
+        ListNode* right =head;
+        while(right->next)
         {
-            nums.push_back(ptr->val);
-            ptr = ptr->next;
+            right = right->next;
         }
-        for(int i=0; i<nums.size()/2; i++)
-           { 
-            if(nums[i] != nums[nums.size()-1-i])
-                return false;
-            }
-        return true;
+        head = right;
+        while(left != right && left->prev != right)
+        {
+            ListNode* tempL = left;
+            ListNode* tempR = right;
+            left = right;
+            right = tempL;
+            left->prev = tempL->prev;
+            left->next = tempL->next;
+            right->prev = tempR->prev;
+            right->next = tempR->next;
+        }
+        return head;
     }
 };
 */
-
-//optimal solution 
+// better approach to swap the prev and next pointer and pointing to the second last prev node give the tail of the linkedlist which is the head to return
+//TC is O(N) with SC O(1).
 class Solution{
-public:
-    bool isPalindrome(ListNode* head) {
-        if(!head || !head->next) return true;
-        ListNode* ptr = head;
-        vector<int> nums;
-        while(ptr)
+    public:
+    ListNode* reverseDLL(ListNode* head)
+    {
+        if(!head || !head->next) return head;
+        ListNode* curr = head;
+        ListNode* temp = nullptr;
+        while(curr != nullptr)
         {
-            nums.push_back(ptr->val);
-            ptr = ptr->next;
+            temp = curr->prev;
+            curr->prev = curr->next;
+            curr->next = temp;
+
+            curr = curr->prev;
         }
-        for(int i=0; i<nums.size()/2; i++)
-           { 
-            if(nums[i] != nums[nums.size()-1-i])
-                return false;
-            }
-        return true;
+        return temp->prev;
     }
 };
