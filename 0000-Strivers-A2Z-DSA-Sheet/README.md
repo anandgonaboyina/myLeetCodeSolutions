@@ -116,3 +116,4 @@
 | [Find the starting point in LL](Find-the-starting-point-in-LL) | [.cpp](Find-the-starting-point-in-LL/solution.cpp) |
 | [Length of loop in LL](Length-of-loop-in-LL) | [.cpp](Length-of-loop-in-LL/solution.cpp) |
 | [Check if LL is palindrome or not](Check-if-LL-is-palindrome-or-not) | [.cpp](Check-if-LL-is-palindrome-or-not/solution.cpp) |
+| [Segregate odd and even nodes in Linked List](Segregate-odd-and-even-nodes-in-Linked-List) | [.cpp](Segregate-odd-and-even-nodes-in-Linked-List/solution.cpp) |
