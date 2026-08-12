@@ -36,7 +36,9 @@ public:
 };
 */
 
-//my brute force solution implementing using the vector
+//my brute force solution implementing using the vector got 58% beats
+//Tc is N and SC is N
+/*
 class Solution{
 public:
     bool isPalindrome(ListNode* head) {
@@ -54,5 +56,46 @@ public:
                 return false;
             }
         return true;
+    }
+};
+*/
+
+//optimal solution for Sc to 1  // need to complete this follow up Qn
+// using the Tortoise and Hare i find middle and then reverse the last half of LL and compare from last and first
+class Solution{
+public:
+    ListNode* reverseLL(ListNode* head)
+    {
+        ListNode* prev = nullptr;
+        ListNode* curr = head;
+        while(curr)
+        {
+            ListNode* next = curr->next;
+            curr->next = prev;
+            prev = curr;
+            curr = next;
+        }
+        return prev;
+    }
+    bool isPalindrome(ListNode* head) {
+        if(!head || !head->next) return head;
+        ListNode* slow = head;
+        ListNode* fast = head;
+        ListNode* ptr = head;
+        while(fast &&  fast->next)
+       {
+            slow = slow->next;
+            fast = fast->next->next;
+       }
+     //here slow sit at middle of the linkedlist whatever the size if even or odd it sit at n/2
+       ListNode* tail = reverseLL(slow);
+       while(ptr != slow)
+       {
+        if(ptr->val != tail->val)
+            return false;
+        ptr = ptr->next;
+        tail = tail->next;
+       }
+    return true;
     }
 };
