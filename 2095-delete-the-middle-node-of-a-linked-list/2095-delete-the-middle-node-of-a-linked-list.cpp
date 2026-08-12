@@ -9,7 +9,7 @@
  * };
  */
  //my brute force solution got 50% beats TC is N and Sc is 1
-// got 
+// got 50% beats
 class Solution {
 public:
     ListNode* deleteMiddle(ListNode* head) {
