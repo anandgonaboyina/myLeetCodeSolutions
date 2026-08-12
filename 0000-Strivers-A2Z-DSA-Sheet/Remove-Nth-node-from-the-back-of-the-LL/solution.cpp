@@ -43,13 +43,10 @@ public:
     }
 };
 */
-
-//optimal solution of above logic but in single pass
+//optimal solution of above logic in single pass
 class Solution {
 public:
     ListNode* removeNthFromEnd(ListNode* head, int n) {
-        if(!head) return head;
-        if(head && !head->next && n==1) return nullptr;
         ListNode* dummy  = new ListNode(0, head);
         ListNode* slow = dummy;
         ListNode* fast = dummy;
@@ -67,7 +64,9 @@ public:
         ListNode* temp = slow->next;
         slow->next = temp->next;          // if head is need to delete then slow = dummy so dummy->next = head->next fine it saves us
         delete temp;
-        return dummy->next;
+        head = dummy->next;
+        delete dummy;                       
+        return head;
     }
 };
 //## Notes logic behind
