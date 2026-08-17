@@ -10,6 +10,7 @@
  */
 
  //optimal merge sort solution for linkedlist
+ //getting 
 class Solution {
 public:
     ListNode* sortLL(ListNode* head)
