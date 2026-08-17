@@ -10,7 +10,7 @@
  */
 
  //optimal merge sort solution for linkedlist
- //getting 
+ //getting 5% beats only all the time
 class Solution {
 public:
     ListNode* sortLL(ListNode* head)
