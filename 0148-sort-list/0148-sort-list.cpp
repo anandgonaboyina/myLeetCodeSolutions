@@ -10,7 +10,8 @@
  */
 
  //optimal merge sort solution for linkedlist
- //getting 5% beats only all the time
+ //getting 5% beats only all the time if we use heap initilization of the dummy node
+ //getting 80% betas if we use stack dummy variable of node
 class Solution {
 public:
     ListNode* sortLL(ListNode* head)
