@@ -31,8 +31,15 @@ public:
     }
     ListNode* mergeLL(ListNode* l1, ListNode* l2)
     {
+        //below is heap method takes time for memory allocation and delete
+        /*
         ListNode* dummy = new ListNode(0);
         ListNode* curr = dummy;
+        */
+        //stack one is prefer as it instantly
+        //Stack allocation is instantaneous, and it automatically cleans itself up, meaning no new and no delete.
+        ListNode dummy(0);
+        ListNode* curr = &dummy;
         while(l1 && l2)
         {    if(l1->val <= l2->val)
             {
@@ -50,9 +57,13 @@ public:
         if(l1) curr->next = l1;
         else
             curr->next =l2;
+            //below is heap one slow
+        /*
         ListNode* newHead = dummy->next;
         delete  dummy;
         return newHead;
+        */
+        return dummy.next;  // since dummy not a pointer so it ListNode structure so dont use -> this we have to access the next of it with .
     }
     ListNode* sortList(ListNode* head) {
         return sortLL(head);
