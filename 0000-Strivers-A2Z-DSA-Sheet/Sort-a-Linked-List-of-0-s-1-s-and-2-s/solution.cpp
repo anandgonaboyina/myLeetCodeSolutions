@@ -8,6 +8,9 @@ class ListNode{
     ListNode(int x) : data(x), next(nullptr) {}
     ListNode(int x, ListNode *next) : data(x), next(next) {}
 };
+
+//No leetcode problem is available
+
 */
 //my brute force solution
 //Tc is N and SC is 1 but replacing the data is not allowed in linkedlist
