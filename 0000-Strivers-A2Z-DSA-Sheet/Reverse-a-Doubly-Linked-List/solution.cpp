@@ -34,7 +34,7 @@ public:
         {
             right = right->next;
         }
-        while(left != right && left->prev != right)  // here not like left < right 
+        while(left != right && left->prev != right)  // here not like left < right as pointers are addresses not values 
         {
             int temp = left->data;
             left->data = right->data;
@@ -95,3 +95,56 @@ class Solution{
         return temp->prev;
     }
 };
+
+
+// revision 1
+//in place replacement but reductant head never use this way
+class Solution{
+    public:
+    ListNode* reverseDLL(ListNode* head)
+    {
+        if(!head || !head->next) return head;
+        ListNode* ptr = head;
+        while(ptr)
+        {
+            ListNode* prev = ptr->prev;
+            ptr->prev = ptr->next;
+            ptr->next = prev;
+            if(ptr->prev)
+                head = ptr;
+            ptr = ptr->prev;
+        }
+        return head;
+    }
+};
+
+//above have Redundant Assignment: Moving head = ptr; inside the loop updates the head variable on every single iteration
+
+class Solution{
+    public:
+    ListNode* reverseDLL(ListNode* head)
+    {
+        if(!head || !head->next) return head;
+        ListNode* curr = head;
+        ListNode* prev = nullptr;
+        while(curr)
+        {
+            prev = curr->prev;
+            curr->prev = curr->next;
+            curr->next = prev;
+            curr = curr->prev;
+        }
+            head = prev->prev;  // here we have to give the newhead that is in prev of prev
+        return head;
+    }
+};
+
+
+
+
+
+
+
+
+
+
