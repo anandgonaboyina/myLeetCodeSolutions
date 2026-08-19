@@ -31,7 +31,7 @@ class Solution{
 
  // optimal solution obtained from logic of Tortoise and Hare pattern
  // got 97 % beats TC is N and SC is 1
- /*
+ 
 class Solution {
 public:
     bool hasCycle(ListNode *head) {
@@ -43,14 +43,14 @@ public:
            {
                 slow = slow->next;
                 fast = fast->next->next;
-                if(slow  == fast)
+                if(slow  == fast)                 // it has to be write after the moving of the slow and fast otherwise the start itself equal will give true only
                        return true;
            }
 
         return false;
     }
 };
-*/
+
 
  //my brute force 2 is discarded approach because it wont work as it goes to inifinite loop if loop there
 // waste of time 
@@ -67,9 +67,9 @@ public:
                 ptr2 = ptr1;
                 while(ptr2)
                 {
-                    if(ptr2 == ptr1)
+                    if(ptr2 == ptr1)   
                         return true;
-                    ptr2 = ptr2->next;
+                    ptr2 = ptr2->next;    
                 }
             ptr1 = ptr1->next;
            }
@@ -79,22 +79,5 @@ public:
 */
 
 //revision 1
+  // it has to be write after the moving of the slow and fast otherwise the start itself equal will give true only
 
-// optimal solution TC is N and SC is 1;
-class Solution {
-public:
-    bool hasCycle(ListNode *head) {
-        if(!head || !head->next)
-            return false;
-        ListNode* slow = head;
-        ListNode* fast = head;
-        while(fast && fast->next)
-        {
-            slow = slow->next;
-            fast = fast->next->next;
-            if(slow == fast)                // it has to be write after the moving of the slow and fast otherwise the start itself equal will give true only
-                return true;
-        }
-    return false;
-    }
-};
