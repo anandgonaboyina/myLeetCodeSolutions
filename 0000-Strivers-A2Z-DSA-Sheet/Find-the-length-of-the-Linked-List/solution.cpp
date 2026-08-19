@@ -6,7 +6,7 @@ public:
     int getLength(ListNode* head) {
         ListNode* ptr = head;
         int len =0;
-        while(ptr != nullptr)
+        while(ptr != nullptr)  // or while(ptr)
             {
                 len++;
                 ptr = ptr->next;
@@ -17,6 +17,7 @@ public:
 */
 /*
 // recursive approach TC is N and Sc is N as stack of N functions
+//return 1 + getLength(head->next)  or return 0
 class Solution{
     public:
     int getLength(ListNode* head)
@@ -27,7 +28,9 @@ class Solution{
     }
 };
 */
+
 // optimizing the Sc for recursive method to SC as 1
+// return getLength(head->next, acc+1) and return acc when head is null
 /*
 Currently, above recursive code performs addition (1 + getLength(...)) after the recursive call returns. This forces the system to keep stack frames open.By passing an accumulator variable to keep track of the count as you go down the list, the compiler can optimize the code to use \(O(1)\) space (Tail Call Optimization / TCO
 */
