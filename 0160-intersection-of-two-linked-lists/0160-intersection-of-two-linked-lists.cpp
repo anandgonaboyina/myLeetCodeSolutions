@@ -58,7 +58,8 @@ public:
     }
 };
 */
-// Optimal solution
+// Optimal solution TC is M+N and SC is 1
+//using math to align them to point the intersect node at simultaneously
 class Solution {
 public:
     ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
