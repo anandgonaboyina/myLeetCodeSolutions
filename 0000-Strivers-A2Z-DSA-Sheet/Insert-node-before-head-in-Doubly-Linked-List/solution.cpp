@@ -22,3 +22,17 @@ public:
         return head;
     }
 };
+
+//revision 1
+class Solution
+{
+    public:
+        ListNode* insertBeforeHead(ListNode* head, int X)
+        {
+            ListNode* newHead = new ListNode(X, nullptr, head);
+            if(head)
+                head->prev = newHead;
+            head = newHead;
+            return head;
+        }
+};
