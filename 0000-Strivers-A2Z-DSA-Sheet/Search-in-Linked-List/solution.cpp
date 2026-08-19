@@ -11,6 +11,7 @@ public:
     }
 };
 */ 
+
 // recursive way with Sc as 1 and Tc as N
 class Solution {
 public:
@@ -36,3 +37,44 @@ public:
     }
 };
 */
+
+
+
+
+//revision 1
+//recursive way
+class Solution {
+public:
+    bool searchKey(ListNode* head, int key) {
+        if(!head) return false;
+        else if(head->val == key) return true;
+        return searchKey(head->next, key)
+    }
+};
+//iterative way
+class Solution {
+public:
+    bool searchKey(ListNode* head, int key) {
+        ListNode* ptr = head;
+        while(ptr)
+        {
+            if(head->val == key) return true;
+            ptr = ptr->next;
+        }
+        return false;
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
