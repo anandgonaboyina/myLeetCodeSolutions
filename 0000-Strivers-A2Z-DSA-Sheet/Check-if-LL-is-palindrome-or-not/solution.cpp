@@ -103,3 +103,72 @@ public:
     return true;
     }
 };
+
+
+//revision : 1
+//my brute force solution 1
+// TC is N and SC is N
+/*
+class Solution{
+public:
+    bool isPalindrome(ListNode* head) {
+        if(!head || !head->next) return true;
+        stack<int> st;
+        ListNode* ptr = head;
+        while(ptr)
+        {
+            st.push(ptr->val);
+            ptr = ptr->next;
+        }
+        ptr = head;
+        while(ptr)
+        {
+            if(ptr->val != st.top())
+                return false;
+            st.pop();
+            ptr= ptr->top
+        }
+        return true;
+    }
+};
+*/
+//optimal solution
+// TC is N and SC is N
+class Solution{
+public:
+    ListNode* reverseLL(ListNode* head)
+    {
+        if(!head || !head->next) return head;
+        ListNode* ptr =head;
+        ListNode* prev = nullptr;
+        while(ptr)
+        {
+            ListNode* temp = ptr->next;
+            ptr->next = prev;
+            prev = ptr;
+            ptr = temp;
+        }
+        return prev;
+    }
+    bool isPalindrome(ListNode* head) {
+        if(!head || !head->next) return true;
+        ListNode* slow = head;
+        ListNode* fast = head;
+        ListNode* ptr = head;
+        while(fast && fast->next)
+        {
+            slow = slow->next;
+            fast = fast->next->next;
+        }
+        ListNode* tail = reverseLL(slow);
+        while(ptr != slow)
+        {
+            if(ptr->val != tail->val)
+                return false;
+            tail= tail->next;
+            ptr= ptr->next;
+        }
+        return true;
+    }
+};
+
