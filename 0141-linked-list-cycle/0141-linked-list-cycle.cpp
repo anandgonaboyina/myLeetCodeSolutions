@@ -7,7 +7,8 @@
  * };
  */
 
-//my brute force solution TC is N and SC is N so getting 8% beats
+//my brute force solution TC is N and SC is N 
+//so getting 8% beats
 /*
 class Solution{
     public:
@@ -77,27 +78,8 @@ public:
 };
 */
 
-
 //revision 1
-//my brute force solution SC is N worst
-class Solution {
-public:
-    bool hasCycle(ListNode *head) {
-        if(!head || !head->next)
-            return false;
-        unordered_set<ListNode*> st;
-        ListNode* ptr = head;
-        while(ptr)
-        {
-            if(st.contains(ptr))
-                return true;
-            st.insert(ptr);
-            ptr = ptr->next;
-        }
-    return false;
-    }
-};
-/*
+
 // optimal solution TC is N and SC is 1;
 class Solution {
 public:
@@ -116,4 +98,3 @@ public:
     return false;
     }
 };
-*/
