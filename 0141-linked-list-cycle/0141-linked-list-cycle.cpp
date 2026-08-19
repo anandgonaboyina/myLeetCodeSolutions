@@ -30,7 +30,7 @@ class Solution{
 
  // optimal solution obtained from logic of Tortoise and Hare pattern
  // got 97 % beats TC is N and SC is 1
- 
+ /*
 class Solution {
 public:
     bool hasCycle(ListNode *head) {
@@ -49,9 +49,9 @@ public:
         return false;
     }
 };
+*/
 
-
- //my brute force 2 discarded approach because it wont work as it goes to inifinite loop if loop there
+ //my brute force 2 is discarded approach because it wont work as it goes to inifinite loop if loop there
 // waste of time 
 /*
 class Solution {
@@ -73,6 +73,47 @@ public:
             ptr1 = ptr1->next;
            }
         return false;
+    }
+};
+*/
+
+
+//revision 1
+//my brute force solution SC is N worst
+class Solution {
+public:
+    bool hasCycle(ListNode *head) {
+        if(!head || !head->next)
+            return false;
+        unordered_set<ListNode*> st;
+        ListNode* ptr = head;
+        while(ptr)
+        {
+            if(st.contains(ptr))
+                return true;
+            st.insert(ptr);
+            ptr = ptr->next;
+        }
+    return false;
+    }
+};
+/*
+// optimal solution TC is N and SC is 1;
+class Solution {
+public:
+    bool hasCycle(ListNode *head) {
+        if(!head || !head->next)
+            return false;
+        ListNode* slow = head;
+        ListNode* fast = head;
+        while(fast && fast->next)
+        {
+            slow = slow->next;
+            fast = fast->next->next;
+            if(slow == fast)                // it has to be write after the moving of the slow and fast otherwise the start itself equal will give true only
+                return true;
+        }
+    return false;
     }
 };
 */
