@@ -24,3 +24,22 @@ public:
             }
     }
 };
+
+// without standard min function
+// best recyrsuve way
+int GCD(int a, int b) 
+{
+if(b==0) return a;
+ return GCD(b, a%b);
+}
+// or Iterative
+int GCD(int a, int b)
+{
+while(true) 
+    {
+      if(b===0) return a;
+      int temp = a;
+      a=b;
+      b = temp%b;
+    }
+}
