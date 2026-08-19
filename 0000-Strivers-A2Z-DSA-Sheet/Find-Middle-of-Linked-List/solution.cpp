@@ -8,7 +8,9 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+ //leetcode : Middle of Linked List
  //my brute force solution got 100% beats TC is N and SC is 1
+ //but it is two pass
  /*
 class Solution {
 public:
