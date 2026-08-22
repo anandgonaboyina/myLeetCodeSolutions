@@ -9,6 +9,7 @@
  * };
  */
  //my brute force solution
+ // optimal solution got 100% beats
 class Solution {
 public:
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
