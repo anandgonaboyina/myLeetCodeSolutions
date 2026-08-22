@@ -82,9 +82,7 @@ class Solution {
            zero->next = (dummy1.next != nullptr)? dummy1.next : dummy2.next;
            one->next = dummy2.next;
            two->next = nullptr;
-           if(dummy0.next) return dummy0.next;
-           if(dummy1.next) return dummy1.next;
-        return dummy2.next;
+        return dummy0.next;
     }
 };
 
