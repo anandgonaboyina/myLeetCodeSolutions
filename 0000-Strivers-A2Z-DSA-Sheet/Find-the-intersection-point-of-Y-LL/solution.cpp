@@ -91,7 +91,7 @@ public:
         while(ptr2)
         {
             l2++;
-            ptr2 = ptr2->next;
+            ptr2 = ptr2->next; 
         }
         int d = abs(l1-l2);
         ptr1 = headA;
@@ -112,3 +112,5 @@ public:
         return nullptr;
     }
 };
+
+//revision 1
