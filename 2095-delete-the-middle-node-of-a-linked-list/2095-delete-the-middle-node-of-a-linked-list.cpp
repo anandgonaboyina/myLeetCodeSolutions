@@ -9,7 +9,7 @@
  * };
  */
  //my brute force solution got 50% beats TC is N and Sc is 1
-// got 50% beats
+// got 100% beats
 class Solution {
 public:
     ListNode* deleteMiddle(ListNode* head) {
@@ -26,9 +26,8 @@ public:
         {
             ptr = ptr->next;
         }
-        ListNode* temp = ptr->next;
-        ptr->next = temp->next;
-        delete temp;
+        ptr->next = slow->next;
+        delete slow;
         return head;
     }
 };
@@ -47,7 +46,7 @@ public:
             slow = slow->next;
         }
         ListNode* temp = slow->next;
-        slow->next = temp->next;
+        slow->next = slow->next->next;
         delete temp;
         return head;
     }
