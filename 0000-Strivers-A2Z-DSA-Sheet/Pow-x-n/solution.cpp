@@ -6,11 +6,11 @@
         while(N>0)
         {
             if(N%2 == 1 )
-            N = -1*N;
-            x = 1/x;
         }
         double ans=1.0;
         {
+            N = -1*N;
+            x = 1/x;
         long long N = n;
         if(N<0)
 class Solution {
