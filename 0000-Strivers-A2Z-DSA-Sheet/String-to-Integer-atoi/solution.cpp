@@ -59,8 +59,8 @@ public:
         {
             ans = ans*10 + (s[i]-'0');
             i++;
-            if(sign == 1 && ans >= INT_MAX) return INT_MAX;
-            if(sign ==-1 && -ans <= INT_MIN) return INT_MIN;
+            if(sign == 1 && ans > INT_MAX) return INT_MAX;
+            if(sign ==-1 && -ans < INT_MIN) return INT_MIN;
         }
         //not best way to write this much length below
         // ans = (ans>INT_MIN && ans <INT_MAX)? ans : (ans <= INT_MIN? INT_MIN : INT_MAX);
@@ -86,7 +86,8 @@ REVISION NOTES: String to Integer (myAtoi)
 4. The Negative Overflow Sign Trap:
    - MISTAKE: if (sign == -1 && ans < INT_MIN)
    - WHY IT FAILS: 'ans' is accumulated as a positive number (e.g., 2147483648). A positive number is never mathematically smaller than INT_MIN (-2147483648).
-   - FIX: Apply the negative sign to ans during the check: if (sign == -1 && -ans < INT_MIN).
+   - FIX: Apply the negative sign to ans 
+   during the check: if (sign == -1 && -ans < INT_MIN).
 
 5. Catch Overflow Inside the Loop:
    - A 30-digit string will overflow even a 'long long' if you wait until the loop finishes. 
