@@ -127,3 +127,4 @@
 | [Find Pairs with Given Sum in Doubly Linked List](Find-Pairs-with-Given-Sum-in-Doubly-Linked-List) | [.cpp](Find-Pairs-with-Given-Sum-in-Doubly-Linked-List/solution.cpp) |
 | [Delete all occurrences of a key in DLL](Delete-all-occurrences-of-a-key-in-DLL) | [.cpp](Delete-all-occurrences-of-a-key-in-DLL/solution.cpp) |
 | [Pow(x,n)](Pow-x-n) | [.cpp](Pow-x-n/solution.cpp) |
+| [Count Good Numbers](Count-Good-Numbers) | [.cpp](Count-Good-Numbers/solution.cpp) |
