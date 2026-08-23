@@ -1,4 +1,6 @@
 //for SC 1
+// got 100% beats
+//note : look at ans not x the return is ans that value focus
 class Solution {
 public:
     double myPow(double x, int n) {
