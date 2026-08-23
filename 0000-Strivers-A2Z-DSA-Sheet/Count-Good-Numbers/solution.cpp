@@ -1,5 +1,6 @@
 //optimal solution
 //got 100% beats
+//leetcode problem : 1922. Count Good Numbers
 class Solution { 
 public:
     long long modPow(long long x, long long n)
