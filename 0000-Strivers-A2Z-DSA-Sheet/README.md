@@ -124,3 +124,4 @@
 | [Find the intersection point of Y LL](Find-the-intersection-point-of-Y-LL) | [.cpp](Find-the-intersection-point-of-Y-LL/solution.cpp) |
 | [Add one to a number represented by LL](Add-one-to-a-number-represented-by-LL) | [.cpp](Add-one-to-a-number-represented-by-LL/solution.cpp) |
 | [Add two numbers in Linked List](Add-two-numbers-in-Linked-List) | [.cpp](Add-two-numbers-in-Linked-List/solution.cpp) |
+| [Find Pairs with Given Sum in Doubly Linked List](Find-Pairs-with-Given-Sum-in-Doubly-Linked-List) | [.cpp](Find-Pairs-with-Given-Sum-in-Doubly-Linked-List/solution.cpp) |
