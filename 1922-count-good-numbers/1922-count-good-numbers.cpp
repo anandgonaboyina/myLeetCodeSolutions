@@ -1,3 +1,5 @@
+//optimal solution
+//got 100% beats
 class Solution {
 public:
     long long modPow(long long x, long long n)
@@ -24,3 +26,20 @@ public:
         return ans;
     }
 };
+
+
+/*
+=========================================
+REVISION NOTES: COUNT GOOD NUMBERS
+=========================================
+1. The Built-in `pow()` Trap:
+   - Never use `pow()` for massive integers or modulo problems. It uses floating-point math and loses precision. 
+   - FIX: Write your own Modular Binary Exponentiation function.
+
+2. The Modulo Trap:
+   - When calculating (A * B) % MOD, you must apply the modulo to the intermediate steps to prevent overflow: 
+     ans = ((ans % MOD) * (base % MOD)) % MOD.
+
+3. Type Safety:
+   - Always use `long long` for intermediate answers when multiplying modulo values, otherwise `int * int` might overflow before the modulo can catch it.
+*/
