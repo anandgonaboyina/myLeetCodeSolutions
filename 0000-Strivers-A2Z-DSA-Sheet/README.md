@@ -129,3 +129,4 @@
 | [Pow(x,n)](Pow-x-n) | [.cpp](Pow-x-n/solution.cpp) |
 | [Count Good Numbers](Count-Good-Numbers) | [.cpp](Count-Good-Numbers/solution.cpp) |
 | [Sort a Stack](Sort-a-Stack) | [.cpp](Sort-a-Stack/solution.cpp) |
+| [Reverse a Stack](Reverse-a-Stack) | [.cpp](Reverse-a-Stack/solution.cpp) |
