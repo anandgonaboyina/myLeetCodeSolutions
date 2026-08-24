@@ -9,18 +9,21 @@ public:
             ans.push_back(curr);
             return;
         }
-        curr.apend('0');
+        curr.push_back('0');
         solve(n, curr, ans);
         curr.pop_back();
-        if(curr.empty() || curr.back != '1')
-            curr.append('1');
-        solve(n, curr, ans);
+        if(curr.empty() || curr.back() != '1')
+        {
+            curr.push_back('1');
+            solve(n, curr, ans);
+            curr.pop_back();
+        }
     }
     vector<string> generateBinaryStrings(int n) {
         vector<string> ans;
         if(n==0) return ans;
         string bstr = "";
-        solve(n, s, ans);
+        solve(n, bstr, ans);
         return ans;
     }
 };
