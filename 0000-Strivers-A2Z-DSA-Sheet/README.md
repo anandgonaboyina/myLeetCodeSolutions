@@ -130,3 +130,4 @@
 | [Count Good Numbers](Count-Good-Numbers) | [.cpp](Count-Good-Numbers/solution.cpp) |
 | [Sort a Stack](Sort-a-Stack) | [.cpp](Sort-a-Stack/solution.cpp) |
 | [Reverse a Stack](Reverse-a-Stack) | [.cpp](Reverse-a-Stack/solution.cpp) |
+| [Generate Binary Strings Without Consecutive 1s](Generate-Binary-Strings-Without-Consecutive-1s) | [.cpp](Generate-Binary-Strings-Without-Consecutive-1s/solution.cpp) |
