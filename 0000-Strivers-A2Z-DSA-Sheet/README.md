@@ -132,3 +132,4 @@
 | [Reverse a Stack](Reverse-a-Stack) | [.cpp](Reverse-a-Stack/solution.cpp) |
 | [Generate Binary Strings Without Consecutive 1s](Generate-Binary-Strings-Without-Consecutive-1s) | [.cpp](Generate-Binary-Strings-Without-Consecutive-1s/solution.cpp) |
 | [Generate Parentheses](Generate-Parentheses) | [.cpp](Generate-Parentheses/solution.cpp) |
+| [Power Set](Power-Set) | [.cpp](Power-Set/solution.cpp) |
