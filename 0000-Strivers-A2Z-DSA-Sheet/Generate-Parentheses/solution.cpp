@@ -1,3 +1,4 @@
+//not a leetcode problem
 class Solution {
 public:
     void solve(int n, int open, int close, string &curr, vector<string> &ans)
@@ -25,6 +26,6 @@ public:
         if(n==0) return ans;
         string s = "";
         solve(n, 0, 0, s, ans);
-        return ans;
+        return ans; 
     }
 };
