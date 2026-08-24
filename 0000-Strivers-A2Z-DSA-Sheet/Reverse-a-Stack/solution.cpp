@@ -1,4 +1,5 @@
 // not a leetcode problem
+//runs in O(N^2) time and O(N) space, which is exactly the optimal solution for recursive constraint
 class Solution {
 public:
     void helper(stack<int> &st, int ele)
