@@ -2,7 +2,7 @@
 
 class Solution {
 public:
-    void solve(int n, string curr, vector<string> &ans)
+    void solve(int n, string &curr, vector<string> &ans)
     {
         if(curr.size()==n)
         {
@@ -12,7 +12,7 @@ public:
         curr.apend('0');
         solve(n, curr, ans);
         curr.pop_back();
-        if(curr.back != '1')
+        if(curr.empty() || curr.back != '1')
             curr.append('1');
         solve(n, curr, ans);
     }
@@ -20,7 +20,7 @@ public:
         vector<string> ans;
         if(n==0) return ans;
         string bstr = "";
-        ans = solve(n, s, ans);
+        solve(n, s, ans);
         return ans;
     }
 };
