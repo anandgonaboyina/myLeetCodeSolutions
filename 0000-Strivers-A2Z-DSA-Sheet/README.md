@@ -133,3 +133,4 @@
 | [Generate Binary Strings Without Consecutive 1s](Generate-Binary-Strings-Without-Consecutive-1s) | [.cpp](Generate-Binary-Strings-Without-Consecutive-1s/solution.cpp) |
 | [Generate Parentheses](Generate-Parentheses) | [.cpp](Generate-Parentheses/solution.cpp) |
 | [Power Set](Power-Set) | [.cpp](Power-Set/solution.cpp) |
+| [learn-all-patterns-of-subsequences-theory](learn-all-patterns-of-subsequences-theory) | [.cpp](learn-all-patterns-of-subsequences-theory/solution.cpp) |
