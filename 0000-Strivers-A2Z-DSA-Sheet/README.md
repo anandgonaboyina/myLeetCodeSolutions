@@ -134,3 +134,4 @@
 | [Generate Parentheses](Generate-Parentheses) | [.cpp](Generate-Parentheses/solution.cpp) |
 | [Power Set](Power-Set) | [.cpp](Power-Set/solution.cpp) |
 | [learn-all-patterns-of-subsequences-theory](learn-all-patterns-of-subsequences-theory) | [.cpp](learn-all-patterns-of-subsequences-theory/solution.cpp) |
+| [Count all subsequences with sum K](Count-all-subsequences-with-sum-K) | [.cpp](Count-all-subsequences-with-sum-K/solution.cpp) |
