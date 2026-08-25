@@ -1,3 +1,5 @@
+//my optimal solution Tc is 2^n and Sc is n
+//beats 100%
 class Solution {
 public:
 
