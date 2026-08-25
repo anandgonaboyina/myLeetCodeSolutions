@@ -20,6 +20,12 @@ class Solution {
     }
 };
 
+//notes for above problem
+/*
+Because you must generate every single combination (there is no target sum to bound you), the Pick / Not-Pick template is the mathematically optimal way to solve this. Your time complexity is a perfect $O(2^N)
+=> One quick note: If the platform you are submitting to (like GeeksforGeeks) expects the final list of sums to be in increasing order, just add sort(ans.begin(), ans.end()); right before you return ans.
+*/
+
 //leetcode problem 78. Subsets
 //similar leetcode problem but it asks to return direct vector of subsets
 /*
