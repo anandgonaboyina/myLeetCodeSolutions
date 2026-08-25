@@ -28,3 +28,30 @@ public:
 
     }
 }; 
+
+//revision notes
+/*
+1. The Core Setup
+Instead of picking/not-picking numbers, you are mapping digits to letters and looping through the options.
+
+Depth (i): Tracks the current digit you are looking at in the input string.
+
+Width (j loop): Loops through the letters available for that specific digit.
+
+2. The Math Trick
+pad[digits[i] - '0']
+Subtracting '0' from a char converts it into an actual integer. This turns the character '2' into the number 2, allowing you to instantly fetch "abc" from your pad array at index 2.
+
+3. The "Magic" Cycle (Winding and Unwinding)
+This is the mechanism that amazed you. It builds every combination one by one:
+
+Push: Pick the first letter (e.g., 'a').
+
+Recurse: Call solve(i + 1) to freeze 'a' in place and move to the next digit.
+
+Pop (Unwind): When the recursion finishes and hits a return, you jump back, erase 'a' using pop_back(), and the loop moves to 'b'.
+
+4. The Edge Case Trap
+If the input is "" (empty string), digits.size() is 0. If you don't catch this in the main function with if(digits.empty()) return ans;, your base case will blindly trigger and return [""] instead of []
+
+*/
