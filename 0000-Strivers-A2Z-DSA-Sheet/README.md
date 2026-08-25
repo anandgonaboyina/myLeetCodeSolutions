@@ -138,3 +138,4 @@
 | [Check if there exists a subsequence with sum K](Check-if-there-exists-a-subsequence-with-sum-K) | [.cpp](Check-if-there-exists-a-subsequence-with-sum-K/solution.cpp) |
 | [Combination Sum](Combination-Sum) | [.cpp](Combination-Sum/solution.cpp) |
 | [Combination Sum II](Combination-Sum-II) | [.cpp](Combination-Sum-II/solution.cpp) |
+| [Subsets I](Subsets-I) | [.cpp](Subsets-I/solution.cpp) |
