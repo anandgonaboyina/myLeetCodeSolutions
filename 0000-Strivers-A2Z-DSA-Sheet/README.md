@@ -140,3 +140,4 @@
 | [Combination Sum II](Combination-Sum-II) | [.cpp](Combination-Sum-II/solution.cpp) |
 | [Subsets I](Subsets-I) | [.cpp](Subsets-I/solution.cpp) |
 | [Subsets II](Subsets-II) | [.cpp](Subsets-II/solution.cpp) |
+| [Combination Sum III](Combination-Sum-III) | [.cpp](Combination-Sum-III/solution.cpp) |
