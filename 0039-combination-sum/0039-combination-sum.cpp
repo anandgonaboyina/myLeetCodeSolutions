@@ -1,5 +1,6 @@
 //my optimal solution Tc is 2^n and Sc is n
 //beats 100%
+//here distinct nums given but for combination sum 2 it can contain duplicates so mind it as it wont give the unique combination
 class Solution {
 public:
 
