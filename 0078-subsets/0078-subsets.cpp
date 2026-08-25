@@ -1,3 +1,4 @@
+//got 100% beats
 class Solution {
 public:
     void solve(vector<int> &nums, vector<vector<int>> &ans, vector<int> &vt, int i)
