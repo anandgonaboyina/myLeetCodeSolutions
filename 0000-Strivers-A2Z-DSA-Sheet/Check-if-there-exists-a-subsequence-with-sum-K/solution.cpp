@@ -1,47 +1,17 @@
-//notes to revise
-/*
-void solve(int n, string current_string, vector<string>& ans) {
-    // 1. Base case: if current_string length == n, push to ans and return
-    
-    // 2. Choice 1: Always append '0' and call solve()
-    
-    // 3. Choice 2: If valid, append '1' and call solve()
-}
-*/
 //not a leetcode problem
-class Solution {
-public:
-    void solve(int n, string &curr, vector<string> &ans)
+class Solution{
+    public:
+    bool solve(vector<int> &nums, int k, int sum, int i)
     {
-        if(curr.size()==n)
+        if(i==nums.size())
         {
-            ans.push_back(curr);
-            return;
+            if(sum==k)
+                return true;
+            return false;
         }
-        curr.push_back('0');
-        solve(n, curr, ans);
-        curr.pop_back();
-        if(curr.empty() || curr.back() != '1')
-        {
-            curr.push_back('1');
-            solve(n, curr, ans);
-            curr.pop_back();
-        }
+        return solve(nums, k, sum+nums[i], i+1) || solve(nums, k, sum, i+1);
     }
-    vector<string> generateBinaryStrings(int n) {
-        vector<string> ans;
-        if(n==0) return ans;
-        string bstr = "";
-        solve(n, bstr, ans);
-        return ans;
+    bool checkSubsequenceSum(vector<int>& nums, int k) {
+        return solve(nums, k, 0, 0);
     }
 };
-
-//notes to revise
-/*
-void solve(int n, string current_string, vector<string>& ans) {
-    // 1. Base case: if current_string length == n, push to ans and return
-    // 2. Choice 1: Always append '0' and call solve()
-    // 3. Choice 2: If valid, append '1' and call solve()
-}
-*/
