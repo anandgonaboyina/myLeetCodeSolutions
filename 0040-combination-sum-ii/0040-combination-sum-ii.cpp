@@ -1,4 +1,4 @@
-//getting <40%% beats Sc is 1 as axialiary space for ans and Tc is 2^n    
+//getting 100%% beats Sc is 1 as axialiary space for ans and Tc is 2^n    
     class Solution {
     public:
 
