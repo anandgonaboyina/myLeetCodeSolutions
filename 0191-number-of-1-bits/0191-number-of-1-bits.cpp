@@ -15,6 +15,8 @@ public:
     }
 };
 */
+//recursive way
+//got 100% beats
 class Solution {
 public:
     int hammingWeight(int n) {
