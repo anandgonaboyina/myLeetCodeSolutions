@@ -1,4 +1,4 @@
-//got 100% beats
+//got 94% beats
 class Solution {
 public:
     bool isPalindrome(string & s, int left, int right)
