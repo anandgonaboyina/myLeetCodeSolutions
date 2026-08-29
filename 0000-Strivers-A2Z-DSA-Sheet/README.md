@@ -146,3 +146,4 @@
 | [Check if the i-th bit is Set or Not](Check-if-the-i-th-bit-is-Set-or-Not) | [.cpp](Check-if-the-i-th-bit-is-Set-or-Not/solution.cpp) |
 | [Check if a Number is Odd or Not](Check-if-a-Number-is-Odd-or-Not) | [.cpp](Check-if-a-Number-is-Odd-or-Not/solution.cpp) |
 | [Check if a Number is Power of 2 or Not](Check-if-a-Number-is-Power-of-2-or-Not) | [.cpp](Check-if-a-Number-is-Power-of-2-or-Not/solution.cpp) |
+| [Count the Number of Set Bits](Count-the-Number-of-Set-Bits) | [.cpp](Count-the-Number-of-Set-Bits/solution.cpp) |
