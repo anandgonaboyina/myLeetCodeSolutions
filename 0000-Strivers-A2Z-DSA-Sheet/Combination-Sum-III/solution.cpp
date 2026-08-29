@@ -4,7 +4,7 @@ class Solution {
 public:
     void solve(vector<vector<int>> &ans, vector<int> &vt, int k, int n, int sum , int i)
     {
-        if(i ==10)
+        if(i ==10 || sum >= n)
         {
             if(k==vt.size() && sum == n)
                 ans.push_back(vt);
@@ -16,7 +16,7 @@ public:
             solve(ans, vt, k, n, sum+i, i+1);
             vt.pop_back();
         }
-        solve(ans, vt, k, n, sum, i+1);
+            solve(ans, vt, k, n, sum, i+1);
     }
 
     vector<vector<int>> combinationSum3(int k, int n) {
