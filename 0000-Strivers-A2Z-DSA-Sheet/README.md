@@ -144,3 +144,4 @@
 | [Letter Combinations of a Phone Number](Letter-Combinations-of-a-Phone-Number) | [.cpp](Letter-Combinations-of-a-Phone-Number/solution.cpp) |
 | [Palindrome partitioning](Palindrome-partitioning) | [.cpp](Palindrome-partitioning/solution.cpp) |
 | [Check if the i-th bit is Set or Not](Check-if-the-i-th-bit-is-Set-or-Not) | [.cpp](Check-if-the-i-th-bit-is-Set-or-Not/solution.cpp) |
+| [Check if a Number is Odd or Not](Check-if-a-Number-is-Odd-or-Not) | [.cpp](Check-if-a-Number-is-Odd-or-Not/solution.cpp) |
