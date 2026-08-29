@@ -15,7 +15,7 @@ public:
     vector<vector<int> > powerSet(vector<int>& nums) {
         vector<vector<int>> ans;
         int n = nums.size();
-        if(n==0) return ans;
+        if(n==0) return ans; // no need i think
         vector<int> pt;
         solve(nums, pt, 0, ans);
         return ans;
