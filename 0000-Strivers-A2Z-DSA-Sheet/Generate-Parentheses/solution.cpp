@@ -23,7 +23,7 @@ public:
     }
     vector<string> generateParenthesis(int n) {
         vector<string> ans;
-        if(n==0) return ans;
+        if(n==0) return ans;   // to prevent an empty string if vector return if n =0
         string s = "";
         solve(n, 0, 0, s, ans);
         return ans; 
