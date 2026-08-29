@@ -35,6 +35,9 @@ public:
     }
 };
 */
+// Time Complexity: O(32 * N) -> simplifies to O(N), but with a slower constant factor.
+// Space Complexity: O(1) auxiliary space.
+
 //other way in minimized code
 class Solution{
 public:
@@ -42,9 +45,10 @@ public:
     {
         vector<int> ans(2, 0);
         long long twoNums =0;
+        // Step 1: Get a ^ b
         for(int num : nums)
             twoNums ^= num;
-
+        // Step 2: Find the rightmost bit where they differ.
         int diffBit=0;
         for(int i=0; i<32; i++)
         {
@@ -54,6 +58,8 @@ public:
                 break;
             }
         }
+        // Step 3: Divide array into two buckets based on diffBit.
+        // Duplicates always fall into the same bucket and cancel out to 0.
         for(int x : nums)
         {
             if((x>>diffBit & 1 )== 1)
@@ -64,3 +70,5 @@ public:
         return ans;
     }
 };
+// Time Complexity: O(N) -> Only 2 passes through the array. 100% Beats optimal speed.
+// Space Complexity: O(1) auxiliary space.
