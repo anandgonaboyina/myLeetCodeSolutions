@@ -1,4 +1,5 @@
-
+//got 100% beats
+// Tc is 32N == 32N and SC is 1
 class Solution {
 public:
     int singleNumber(vector<int>& nums) {
