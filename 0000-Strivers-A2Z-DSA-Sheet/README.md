@@ -148,3 +148,4 @@
 | [Check if a Number is Power of 2 or Not](Check-if-a-Number-is-Power-of-2-or-Not) | [.cpp](Check-if-a-Number-is-Power-of-2-or-Not/solution.cpp) |
 | [Count the Number of Set Bits](Count-the-Number-of-Set-Bits) | [.cpp](Count-the-Number-of-Set-Bits/solution.cpp) |
 | [Swap Two Numbers](Swap-Two-Numbers) | [.cpp](Swap-Two-Numbers/solution.cpp) |
+| [Single Number - III](Single-Number-III) | [.cpp](Single-Number-III/solution.cpp) |
