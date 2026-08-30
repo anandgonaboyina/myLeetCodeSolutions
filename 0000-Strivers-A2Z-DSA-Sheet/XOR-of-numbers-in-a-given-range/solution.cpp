@@ -1,5 +1,11 @@
-// my brute force solution
-//TC is N ans SC is 1;
+/* 
+Approach 1: my brute force solution
+TC is N ans SC is 1;
+Note: This works for small numbers but will give Time Limit Exceeded (TLE) 
+in competitive programming if the range is up to 10^9.
+==> Time Complexity: O(N), where N is the number of elements between L and R.
+Space Complexity: O(1)
+*/
 /*
 class Solution{	
 	public:
