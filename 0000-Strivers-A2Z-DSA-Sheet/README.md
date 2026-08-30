@@ -150,3 +150,4 @@
 | [Swap Two Numbers](Swap-Two-Numbers) | [.cpp](Swap-Two-Numbers/solution.cpp) |
 | [Single Number - III](Single-Number-III) | [.cpp](Single-Number-III/solution.cpp) |
 | [Minimum Bit Flips to Convert Number](Minimum-Bit-Flips-to-Convert-Number) | [.cpp](Minimum-Bit-Flips-to-Convert-Number/solution.cpp) |
+| [Power Set Bit Manipulation](Power-Set-Bit-Manipulation) | [.cpp](Power-Set-Bit-Manipulation/solution.cpp) |
