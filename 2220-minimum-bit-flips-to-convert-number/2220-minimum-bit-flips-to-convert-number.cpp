@@ -18,6 +18,7 @@ public:
 };
 */
 // best appraoch using Brian Kernighan's algorithm n & (n-1).
+//got 100% beats
 class Solution{   
 public:    
     int minBitFlips(int start, int goal) {
