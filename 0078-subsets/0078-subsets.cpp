@@ -24,8 +24,11 @@ public:
     }
 };
 */
+// Time Complexity: O(2^N * N) -> 2^N total subsets, and copying each to 'ans' takes O(N) time.
+// Space Complexity: O(N) -> Maximum recursion tree depth is N.  since log2(2^N) => N
 
-//using the bit manipulation
+//better approach to make SC to 1
+// Approach 2: Bit Manipulation (The Binary Checklist)
 class Solution {
 public:
     vector<vector<int>> subsets(vector<int>& nums) {
@@ -44,3 +47,5 @@ public:
         return ans;
     }
 };
+// Time Complexity: O(2^N * N) -> Outer loop runs 2^N times, inner checks N bits.
+// Space Complexity: O(1) -> Auxiliary space is constant (excluding the final answer array).
