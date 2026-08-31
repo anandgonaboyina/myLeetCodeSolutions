@@ -1,4 +1,4 @@
-//got 10% beats only as SC is N and TC is N
+//got 100% beats SC is N and TC is N
 class Solution {
 public:
     bool isValid(string s) {
