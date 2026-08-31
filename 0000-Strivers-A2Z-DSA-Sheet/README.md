@@ -157,3 +157,4 @@
 | [Implement Stack using Queue](Implement-Stack-using-Queue) | [.cpp](Implement-Stack-using-Queue/solution.cpp) |
 | [Implement Queue using Stack](Implement-Queue-using-Stack) | [.cpp](Implement-Queue-using-Stack/solution.cpp) |
 | [Implement queue using Linkedlist](Implement-queue-using-Linkedlist) | [.cpp](Implement-queue-using-Linkedlist/solution.cpp) |
+| [Balanced Paranthesis](Balanced-Paranthesis) | [.cpp](Balanced-Paranthesis/solution.cpp) |
