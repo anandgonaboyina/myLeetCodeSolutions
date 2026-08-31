@@ -154,3 +154,4 @@
 | [XOR of numbers in a given range](XOR-of-numbers-in-a-given-range) | [.cpp](XOR-of-numbers-in-a-given-range/solution.cpp) |
 | [Implement Stack using Arrays](Implement-Stack-using-Arrays) | [.cpp](Implement-Stack-using-Arrays/solution.cpp) |
 | [Implement Queue using Arrays](Implement-Queue-using-Arrays) | [.cpp](Implement-Queue-using-Arrays/solution.cpp) |
+| [Implement Stack using Queue](Implement-Stack-using-Queue) | [.cpp](Implement-Stack-using-Queue/solution.cpp) |
