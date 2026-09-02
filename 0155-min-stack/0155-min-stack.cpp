@@ -1,5 +1,5 @@
 // LeetCode 155: Min Stack.
-/// got 100% beats
+/// getting around 50% beats
 class MinStack {
 stack<pair<int, int>> st;
 public:
