@@ -27,8 +27,29 @@ public:
   }
 };
 */
+
+/*
+REVISION NOTES: MIN STACK
+
+1. The History Trap:
+   - A single variable cannot track previous minimums when elements are popped.
+    
+2. The Pair Solution:
+   - Use stack<pair<int, int>> to store {value, current_minimum} for EVERY element.
+   - When pushing, the new minimum is just min(new_value, previous_minimum).
+   - When popping, the element below it naturally retains the correct historical minimum.
+
+3. C++ STL Memory:
+   - Do not write destructors for standard STL containers (like stack, vector, queue) unless you explicitly allocated them with 'new'.
+
+Time Complexity: O(1) for all operations.
+Space Complexity: O(N) to store the pairs.
+*/
+
+
 //Approach 2 :
 // now minEle also SC 1;
+// got 100%
 class MinStack {
 stack<long long> st;
 long long currMin;
@@ -70,21 +91,21 @@ public:
   }
 };
 
+
 /*
-REVISION NOTES: MIN STACK
+REVISION NOTES: APPROACH 2 - O(1) AUXILIARY SPACE (THE MATH TRICK)
 
-1. The History Trap:
-   - A single variable cannot track previous minimums when elements are popped.
-    
-2. The Pair Solution:
-   - Use stack<pair<int, int>> to store {value, current_minimum} for EVERY element.
-   - When pushing, the new minimum is just min(new_value, previous_minimum).
-   - When popping, the element below it naturally retains the correct historical minimum.
+1. The Flips and Flops (Mistakes to Remember):
+   **- Missing the Normal Push: I initially forgot to push the element entirely if it wasn't a new minimum. 
+   - The Negative Number Trap: I tried pushing 'currMin - prevMin'. This fails with negative numbers! If prevMin = -5 and new value = -10, then -10 - (-5) = -5. But -5 is NOT less than -10, so the flag fails. The mathematically proven formula is '2 * value - currMin'.
+   - The OR Condition Bug: I used an '||' inside pop() to check conditions, which caused it to skip the math logic entirely if the stack just wasn't empty.
+   ******- Integer Overflow: 32-bit integers will overflow when doing '2 * value'. MUST use 'long long' for the stack and currMin.
 
-3. C++ STL Memory:
-   - Do not write destructors for standard STL containers (like stack, vector, queue) unless you explicitly allocated them with 'new'.
+2. The Flag Logic (How it works):
+   - PUSH: When a new minimum 'x' arrives, push a fake value/flag: (2LL * x - currMin). Because x < currMin, this fake value is GUARANTEED to be strictly less than x. Update currMin = x.
+   - TOP: If stack.top() < currMin, we hit a flag! The actual value pushed was currMin.
+   - POP: If stack.top() < currMin, we must restore the previous minimum before removing the flag. The reverse formula is: prevMin = (2LL * currMin - stack.top()).
 
 Time Complexity: O(1) for all operations.
-Space Complexity: O(N) to store the pairs.
+Space Complexity: O(1) auxiliary space (we only store the N elements, no extra pairs).
 */
-
