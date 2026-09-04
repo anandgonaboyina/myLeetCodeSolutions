@@ -117,7 +117,7 @@ Space Complexity: O(1) auxiliary space (we only store the N elements, no extra p
 */
 /*
 ===============================================================
-(Why O(1) Math Approach gets ~20% and Pair Approach gets ~86%)
+(Why O(1) Math Approach gets ~96% not 100% and Pair Approach gets ~86%)
 ==============================================================
 1. Physical Memory is Identical: 
    - Approach 1 pushes pair<int, int> -> 4 bytes + 4 bytes = 8 bytes.
