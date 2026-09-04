@@ -29,8 +29,9 @@ public:
 */
 
 /*
+=========================================================================
 REVISION NOTES: MIN STACK
-
+=========================================================================
 1. The History Trap:
    - A single variable cannot track previous minimums when elements are popped.
     
@@ -47,7 +48,9 @@ Space Complexity: O(N) to store the pairs.
 */
 
 
+// =========================================================================
 //Approach 2 :
+//=========================================================================
 // now minEle also SC 1;
 // got 100%
 class MinStack {
@@ -93,8 +96,9 @@ public:
 
 
 /*
+=========================================================================
 REVISION NOTES: APPROACH 2 - O(1) AUXILIARY SPACE (THE MATH TRICK)
-
+=========================================================================
 1. The Flips and Flops (Mistakes to Remember):
    **- Missing the Normal Push: I initially forgot to push the element entirely if it wasn't a new minimum. 
    - The Negative Number Trap: I tried pushing 'currMin - prevMin'. This fails with negative numbers! If prevMin = -5 and new value = -10, then -10 - (-5) = -5. But -5 is NOT less than -10, so the flag fails. The mathematically proven formula is '2 * value - currMin'.
@@ -108,4 +112,22 @@ REVISION NOTES: APPROACH 2 - O(1) AUXILIARY SPACE (THE MATH TRICK)
 
 Time Complexity: O(1) for all operations.
 Space Complexity: O(1) auxiliary space (we only store the N elements, no extra pairs).
+*/
+/*
+===============================================================
+(Why O(1) Math Approach gets ~20% and Pair Approach gets ~86%)
+==============================================================
+1. Physical Memory is Identical: 
+   - Approach 1 pushes pair<int, int> -> 4 bytes + 4 bytes = 8 bytes.
+   - Approach 2 pushes a 'long long' -> 8 bytes.
+   - LeetCode allocates the exact same memory for both! No actual RAM is saved.
+
+2. CPU Math Overhead: 
+   - Approach 1 just stores and reads basic variables.
+   - Approach 2 forces the CPU to perform 64-bit multiplication (2LL *) and subtraction on every push/pop. This adds tiny microsecond delays.
+
+3. Time Clumping:
+   - For O(1) algorithms, the difference between the 90th percentile and 20th percentile is often just 2 or 3 milliseconds. That tiny math overhead causes the drop.
+   
+Interview Tip: Code the Pair approach (Approach 1) first. If the interviewer asks for O(1) extra space, explain the Math Trick (Approach 2), but you can point out the 64-bit memory reality to show deep system understanding!
 */
