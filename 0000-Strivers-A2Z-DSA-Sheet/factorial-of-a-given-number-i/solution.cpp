@@ -1,5 +1,9 @@
-//Leetcode similar problem : 172. Factorial Trailing Zeroes
-public:
+                return -1;
+            fact *= num;
+            num -= 1;
+        } 
+        return fact;
+    }
 };
 
 /*
@@ -25,12 +29,13 @@ REVISION NOTES: FACTORIAL
 class Solution {
 public:
     int factorial(int n) {
-        if(n == 0) return 1;
-        return n * factorial(n-1);
-    }
-};
-// Time Complexity: O(N)
-// Space Complexity: O(N)
-
+        while(num > 0 )
+        {
+            if(fact > INT_MAX/num)
+    int factorial(int n) {
+        if(n == 0 || n == 1) return 1;
+        int fact =1;
+        int num =n;
+//Leetcode similar problem : 172. Factorial Trailing Zeroes
 class Solution {
-*/ 
+public:
