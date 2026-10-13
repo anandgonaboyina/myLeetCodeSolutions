@@ -1,14 +1,6 @@
-// Time Complexity: O(N)
-
-/*
-    }
+//Leetcode similar problem : 172. Factorial Trailing Zeroes
+public:
 };
-        }
-                return -1;
-            fact *= num;
-            num -= 1;
-        return fact;
-// Space Complexity: O(1)
 
 /*
 REVISION NOTES: FACTORIAL
@@ -24,6 +16,10 @@ REVISION NOTES: FACTORIAL
 3. Recursion Space:
    - Recursion takes O(N) Auxiliary Space due to the call stack. Iterative is O(1) space.
 */
+// Time Complexity: O(N)
+// Space Complexity: O(1)
+
+/*
 //recursively
 
 class Solution {
@@ -36,4 +32,5 @@ public:
 // Time Complexity: O(N)
 // Space Complexity: O(N)
 
+class Solution {
 */ 
