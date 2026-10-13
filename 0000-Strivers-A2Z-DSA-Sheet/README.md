@@ -164,3 +164,4 @@
 | [count-number-of-odd-digits-in-a-number](count-number-of-odd-digits-in-a-number) | [.cpp](count-number-of-odd-digits-in-a-number/solution.cpp) |
 | [reverse-a-number](reverse-a-number) | [.cpp](reverse-a-number/solution.cpp) |
 | [palindrome-number](palindrome-number) | [.cpp](palindrome-number/solution.cpp) |
+| [return-the-largest-digit-in-a-number](return-the-largest-digit-in-a-number) | [.cpp](return-the-largest-digit-in-a-number/solution.cpp) |
