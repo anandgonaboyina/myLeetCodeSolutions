@@ -14,6 +14,8 @@ public:
     }
 };
 /*
+Note: If an insanely strict interviewer says "You are not allowed to use long long", the backup trick is to only reverse the right half of the number and check if it matches the left half
+
 REVISION NOTES: PALINDROME NUMBER
 
 1. Edge Cases:
