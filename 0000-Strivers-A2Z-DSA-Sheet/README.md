@@ -160,3 +160,4 @@
 | [Balanced Paranthesis](Balanced-Paranthesis) | [.cpp](Balanced-Paranthesis/solution.cpp) |
 | [Implement Min Stack](Implement-Min-Stack) | [.cpp](Implement-Min-Stack/solution.cpp) |
 | [Infix to Postfix Conversion](Infix-to-Postfix-Conversion) | [.cpp](Infix-to-Postfix-Conversion/solution.cpp) |
+| [count-all-digits-of-a-number](count-all-digits-of-a-number) | [.cpp](count-all-digits-of-a-number/solution.cpp) |
