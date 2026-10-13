@@ -161,3 +161,4 @@
 | [Implement Min Stack](Implement-Min-Stack) | [.cpp](Implement-Min-Stack/solution.cpp) |
 | [Infix to Postfix Conversion](Infix-to-Postfix-Conversion) | [.cpp](Infix-to-Postfix-Conversion/solution.cpp) |
 | [count-all-digits-of-a-number](count-all-digits-of-a-number) | [.cpp](count-all-digits-of-a-number/solution.cpp) |
+| [count-number-of-odd-digits-in-a-number](count-number-of-odd-digits-in-a-number) | [.cpp](count-number-of-odd-digits-in-a-number/solution.cpp) |
