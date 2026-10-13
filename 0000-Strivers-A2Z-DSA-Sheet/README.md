@@ -163,3 +163,4 @@
 | [count-all-digits-of-a-number](count-all-digits-of-a-number) | [.cpp](count-all-digits-of-a-number/solution.cpp) |
 | [count-number-of-odd-digits-in-a-number](count-number-of-odd-digits-in-a-number) | [.cpp](count-number-of-odd-digits-in-a-number/solution.cpp) |
 | [reverse-a-number](reverse-a-number) | [.cpp](reverse-a-number/solution.cpp) |
+| [palindrome-number](palindrome-number) | [.cpp](palindrome-number/solution.cpp) |
