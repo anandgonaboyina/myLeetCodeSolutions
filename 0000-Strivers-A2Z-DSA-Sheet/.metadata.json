@@ -52,6 +52,17 @@
       "folderPath": "0000-Strivers-A2Z-DSA-Sheet/Arrays/Sorting-Algorithms/Bubble-Sort",
       "githubPath": "0000-Strivers-A2Z-DSA-Sheet/Arrays/Sorting-Algorithms/Bubble-Sort/solution.cpp",
       "lastUpdated": "2026-10-15T17:41:40.546Z"
+    },
+    "https://takeuforward.org/practice/dsa/count-number-of-odd-digits-in-a-number": {
+      "problemName": "Count number of odd digits in a number",
+      "category": "Beginner-Problems",
+      "subcategory": "Basic Math",
+      "language": "cpp",
+      "extension": ".cpp",
+      "githubPath": "0000-Strivers-A2Z-DSA-Sheet/Beginner-Problems/Basic-Math/Count-number-of-odd-digits-in-a-number/solution.cpp",
+      "folderPath": "0000-Strivers-A2Z-DSA-Sheet/Beginner-Problems/Basic-Math/Count-number-of-odd-digits-in-a-number",
+      "url": "https://takeuforward.org/practice/dsa/count-number-of-odd-digits-in-a-number",
+      "lastUpdated": "2026-10-15T19:15:16.914Z"
     }
   }
 }
