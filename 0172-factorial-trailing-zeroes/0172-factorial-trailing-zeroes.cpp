@@ -1,4 +1,20 @@
+class Solution {
+public:
+    int trailingZeroes(int n) {
+        int cnt =0;
+        int num =n;
+        while(num >0)
+        {
+            cnt += num /5;
+            num /= 5;
+        }
+        return cnt;
+    }
+};
 
+
+//my brute force solution getting 2-4% beats only due to checkinge every number
+/*
 class Solution {
 public:
     int trailingZeroes(int n) {
@@ -24,3 +40,4 @@ public:
         return ans;
     }
 };
+*/
