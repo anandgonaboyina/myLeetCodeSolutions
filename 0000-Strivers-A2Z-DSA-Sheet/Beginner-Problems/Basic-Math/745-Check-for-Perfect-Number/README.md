@@ -1,0 +1,1 @@
+<h2><a href="https://takeuforward.org/practice/dsa/check-for-perfect-number">745. Check for Perfect Number</a></h2><h3>Medium</h3><hr><p>Problem statement from <a href="https://takeuforward.org/practice/dsa/check-for-perfect-number">745. Check for Perfect Number</a> on TakeUForward.</p>
