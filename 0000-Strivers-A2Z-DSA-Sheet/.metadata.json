@@ -21,6 +21,16 @@
       "folderPath": "0000-Strivers-A2Z-DSA-Sheet/Beginner-Problems/Basic-Math/908-Factorial-of-a-given-number",
       "url": "https://takeuforward.org/practice/dsa/factorial-of-a-given-number-i",
       "lastUpdated": "2026-10-15T16:46:06.120Z"
+    },
+    "3-Sum": {
+      "problemName": "3 Sum",
+      "url": "",
+      "language": "cpp",
+      "category": "Arrays",
+      "subcategory": "",
+      "folderPath": "0000-Strivers-A2Z-DSA-Sheet/Arrays/3-Sum",
+      "githubPath": "0000-Strivers-A2Z-DSA-Sheet/Arrays/3-Sum/solution.cpp",
+      "lastUpdated": "2026-10-15T17:25:32.268Z"
     }
   }
 }
