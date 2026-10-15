@@ -168,3 +168,4 @@
 | [factorial-of-a-given-number-i](factorial-of-a-given-number-i) | [.cpp](factorial-of-a-given-number-i/solution.cpp) |
 | [check-if-the-number-if-armstrong](check-if-the-number-if-armstrong) | [.cpp](check-if-the-number-if-armstrong/solution.cpp) |
 | [745. Check for Perfect Number](https://takeuforward.org/practice/dsa/check-for-perfect-number) | Beginner Problems/Basic Math | [745-Check-for-Perfect-Number.cpp](Beginner-Problems/Basic-Math/745-Check-for-Perfect-Number/745-Check-for-Perfect-Number.cpp) |
+| [908. Factorial of a given number](https://takeuforward.org/practice/dsa/factorial-of-a-given-number-i) | Beginner-Problems/Basic Math | [908-Factorial-of-a-given-number.cpp](Beginner-Problems/Basic-Math/908-Factorial-of-a-given-number/908-Factorial-of-a-given-number.cpp) |
