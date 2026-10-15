@@ -21,7 +21,7 @@
 | [Counting Frequencies of Array Elements](Counting-Frequencies-of-Array-Elements) | [.cpp](Counting-Frequencies-of-Array-Elements/solution.cpp) |
 | [Highest Occurring Element in an Array](Highest-Occurring-Element-in-an-Array) | [.cpp](Highest-Occurring-Element-in-an-Array/solution.cpp) |
 | [Selection Sort](Selection-Sort) | [.cpp](Selection-Sort/solution.cpp) |
-| [Bubble Sort](Bubble-Sort) | [.cpp](Bubble-Sort/solution.cpp) |
+| [Bubble Sort](#) | Arrays/Sorting Algorithms | [solution.cpp](Arrays/Sorting-Algorithms/Bubble-Sort/solution.cpp) |
 | [Insertion Sorting](Insertion-Sorting) | [.cpp](Insertion-Sorting/solution.cpp) |
 | [Merge Sorting](Merge-Sorting) | [.cpp](Merge-Sorting/solution.cpp) |
 | [Recursive Bubble Sort](Recursive-Bubble-Sort) | [.cpp](Recursive-Bubble-Sort/solution.cpp) |
