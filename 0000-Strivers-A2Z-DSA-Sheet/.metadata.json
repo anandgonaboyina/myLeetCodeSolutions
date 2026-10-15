@@ -31,6 +31,17 @@
       "folderPath": "0000-Strivers-A2Z-DSA-Sheet/Arrays/3-Sum",
       "githubPath": "0000-Strivers-A2Z-DSA-Sheet/Arrays/3-Sum/solution.cpp",
       "lastUpdated": "2026-10-15T17:25:32.268Z"
+    },
+    "https://takeuforward.org/practice/dsa/gcd-of-two-numbers": {
+      "problemName": "693. GCD of Two Numbers",
+      "category": "Beginner-Problems",
+      "subcategory": "",
+      "language": "cpp",
+      "extension": ".cpp",
+      "githubPath": "0000-Strivers-A2Z-DSA-Sheet/Beginner-Problems/693-GCD-of-Two-Numbers/693-GCD-of-Two-Numbers.cpp",
+      "folderPath": "0000-Strivers-A2Z-DSA-Sheet/Beginner-Problems/693-GCD-of-Two-Numbers",
+      "url": "https://takeuforward.org/practice/dsa/gcd-of-two-numbers",
+      "lastUpdated": "2026-10-15T17:28:17.695Z"
     }
   }
 }
