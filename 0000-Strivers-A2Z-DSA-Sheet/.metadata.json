@@ -10,6 +10,17 @@
       "folderPath": "0000-Strivers-A2Z-DSA-Sheet/Beginner-Problems/Basic-Math/745-Check-for-Perfect-Number",
       "url": "https://takeuforward.org/practice/dsa/check-for-perfect-number",
       "lastUpdated": "2026-10-15T16:41:01.407Z"
+    },
+    "https://takeuforward.org/practice/dsa/factorial-of-a-given-number-i": {
+      "problemName": "908. Factorial of a given number",
+      "category": "Beginner-Problems",
+      "subcategory": "Basic Math",
+      "language": "cpp",
+      "extension": ".cpp",
+      "githubPath": "0000-Strivers-A2Z-DSA-Sheet/Beginner-Problems/Basic-Math/908-Factorial-of-a-given-number/908-Factorial-of-a-given-number.cpp",
+      "folderPath": "0000-Strivers-A2Z-DSA-Sheet/Beginner-Problems/Basic-Math/908-Factorial-of-a-given-number",
+      "url": "https://takeuforward.org/practice/dsa/factorial-of-a-given-number-i",
+      "lastUpdated": "2026-10-15T16:46:06.120Z"
     }
   }
 }
