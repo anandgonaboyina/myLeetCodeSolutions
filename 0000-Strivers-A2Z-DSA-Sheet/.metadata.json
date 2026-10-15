@@ -42,6 +42,16 @@
       "folderPath": "0000-Strivers-A2Z-DSA-Sheet/Beginner-Problems/693-GCD-of-Two-Numbers",
       "url": "https://takeuforward.org/practice/dsa/gcd-of-two-numbers",
       "lastUpdated": "2026-10-15T17:28:17.695Z"
+    },
+    "Bubble-Sort": {
+      "problemName": "Bubble Sort",
+      "url": "",
+      "language": "cpp",
+      "category": "Arrays",
+      "subcategory": "Sorting Algorithms",
+      "folderPath": "0000-Strivers-A2Z-DSA-Sheet/Arrays/Sorting-Algorithms/Bubble-Sort",
+      "githubPath": "0000-Strivers-A2Z-DSA-Sheet/Arrays/Sorting-Algorithms/Bubble-Sort/solution.cpp",
+      "lastUpdated": "2026-10-15T17:41:40.546Z"
     }
   }
 }
